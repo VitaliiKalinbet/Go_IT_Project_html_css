@@ -1,12 +1,11 @@
 .section12{
-    
     width: 300px;
     display: flex;
-   flex-wrap: wrap;
+    flex-wrap: wrap;
     margin: 46px auto;
 
     @media (min-width: 480px){
-        width: 450px; 
+        width: 450px;
        margin-top: 68px;
     }
     @media (min-width: 768px){
@@ -34,9 +33,10 @@ display: block;
 margin: 0 auto;
 @media (min-width: 480px){
         margin: 0 auto;
+        width: 446px;
 }
 
-}    
+}
 }
 .section12-text{
     width: 160px;
@@ -48,12 +48,12 @@ margin: 0 auto;
     @media (min-width: 768px){
         width: 240px;
         margin-right: 33px;
-        
+
     }
     @media (min-width: 960px){
         width: 300px;
         margin-right: 42px;
-        
+
     }
     @media (min-width: 1200px){
         width: 266px;
@@ -110,13 +110,13 @@ margin: 0 auto;
         width: 137px;
         @include text-style ($size: 8px, $weight: 500,$color: $black);
         margin-left: 48px;
-        
+
     }
     @media (min-width: 960px){
         width: 171px;
         @include text-style ($size: 11px, $weight: 500,$color: $black);
         margin-left: 55px;
-        
+
     }
     @media (min-width: 1200px){
         width: 155px;
@@ -153,7 +153,7 @@ margin: 0 auto;
         width: 185px;
         margin: 0 0 0 50px;
     }
-  
+
 &__headline{
     width: 133px;
     @include text-style ($size: 9px, $weight: 900,$color: $black);
@@ -208,7 +208,7 @@ margin: 0 auto;
         width: 192px;
         @include text-style ($size: 12px, $weight: 400,$color: $text-color);
     }
-}    
+}
 }
 
 .section12-text__subtitle::before{
