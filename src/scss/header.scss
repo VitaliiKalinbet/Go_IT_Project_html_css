@@ -1,0 +1,884 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header-field-part1 {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-field-part2-left-part {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-field-part2-right-part {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-field-part3 {
+    display: none;
+}
+
+@media (min-width: 1px) and (max-width: 479px) {
+    .header {
+        background-image: url(../img/bg320.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .header-field {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 300px;
+    }
+
+    .header-field-part1__logo {
+        width: 45px;
+        height: 15px;
+    }
+
+    .header-field-part1__link__img {
+        width: 15px;
+        height: 10px;
+    }
+
+    .header-field-part2-left-part__name {
+        margin: 14px 0 28px 0;
+        width: 161px;
+        @include text-style(20px, 700, $white);
+        text-transform: uppercase;
+    }
+
+    .header-field-part2-left-part__desc {
+        position: relative;
+        width: 280px;
+        @include text-style(10px, 500, $white);
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .header-field-part2-right-part__title {
+        margin-top: 155px;
+        width: 225px;
+        @include text-style(9px, 700, $white);
+        text-transform: uppercase;
+    }
+
+    .header-field-part2-right-part__description {
+        width: 245px;
+        @include text-style(9px, 400, #afb0b3);
+    }
+
+    .header-field-part3__btn {
+        width: 146px;
+        height: 33px;
+        margin-top: 40px;
+        background-color: $orange;
+        text-transform: uppercase;
+        border: 0;
+        @include text-style(8px, 700, $white);
+        box-shadow: 0px 5px 38px -1px rgba(255, 107, 8, 0.5);
+        margin-bottom: 15px;
+    }
+
+
+    .header-field-part1 {
+        padding-top: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-field-part2 {
+        margin: 0 auto;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .header-field-part2-left-part {
+        width: 300px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .header-field-part2-left-part__name {
+        margin: 14px 0 28px 0;
+        width: 243px;
+        @include text-style(28px, 700, $white);
+    }
+
+    .header-field-part2-right-part {
+        width: 250px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header-field-part2-left-part__btn {
+        display: none;
+    }
+
+    .header-field-part3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-field-part4 {
+        display: none;
+    }
+
+    .part__desc__right-arrow {
+        position: absolute;
+        padding-left: 5px;
+        @include text-style(12px, 700, cyan);
+    }
+
+    .part__desc__left-arrow {
+        left: -5px;
+        position: absolute;
+        @include text-style(12px, 700, cyan);
+    }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+    .header {
+        background-image: url(../img/bg480.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .header-field {
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+
+    .header-field-part1__logo {
+        width: 66px;
+        height: 23px;
+    }
+
+    .header-field-part1__link__img {
+        width: 28px;
+        height: 17px;
+    }
+
+    .header-field-part2-left-part__name {
+        width: 265px;
+        @include text-style(30px, 700, $white);
+        text-transform: uppercase;
+    }
+
+    .header-field-part2-left-part__desc {
+        position: relative;
+        width: 392px;
+        margin-top: 30px;
+        @include text-style(14px, 500, $white);
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .header-field-part2-right-part__title {
+        margin-top: 155px;
+        width: 350px;
+        @include text-style(14px, 700, $white);
+        text-transform: uppercase;
+    }
+
+    .header-field-part2-right-part__description {
+        margin-top: 15px;
+        width: 376px;
+        @include text-style(14px, 400, #afb0b3);
+    }
+
+    .header-field-part3__btn {
+        width: 220px;
+        height: 54px;
+        margin-top: 40px;
+        background-color: $orange;
+        text-transform: uppercase;
+        border: 0;
+        @include text-style(12px, 700, $white);
+        box-shadow: 0px 5px 38px -1px rgba(255, 107, 8, 0.5);
+    }
+
+
+
+    .header-field-part1 {
+        padding-top: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-field-part2 {
+        margin: 0 auto;
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 22px;
+    }
+
+    .header-field-part2-left-part {
+        width: 450px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .header-field-part2-left-part__btn {
+        display: none;
+    }
+
+    .header-field-part3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-field-part4 {
+        display: none;
+    }
+
+    .part__desc__right-arrow {
+        display: inline-block;
+        position: absolute;
+        padding-left: 20px;
+        @include text-style(12px, 700, cyan);
+    }
+
+    .part__desc__left-arrow {
+        left: -25px;
+        position: absolute;
+        padding-left: -20px;
+        @include text-style(12px, 700, cyan);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+    .header {
+        background-image: url(../img/bg768.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .header-field {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 640px;
+
+    }
+
+    .header-field-part1__logo {
+        width: 57px;
+        height: 18px;
+    }
+
+    .header-field-part1__link__img {
+        width: 13px;
+        height: 9px;
+    }
+
+    .header-field-part2-left-part__name {
+        width: 352px;
+        @include text-style(45px, 700, $white);
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+
+    .header-field-part2-left-part__desc {
+        position: relative;
+        width: 173px;
+        @include text-style(8px, 700, $white);
+        text-transform: uppercase;
+    }
+
+    .header-field-part2-right-part__title {
+        width: 185px;
+        @include text-style(13px, 700, $white);
+        text-transform: uppercase;
+    }
+
+    .header-field-part2-right-part__description {
+        margin-top: 50px;
+        width: 132px;
+        @include text-style(10px, 500, #afb0b3);
+    }
+
+    .header-field-part2-left-part__btn {
+        width: 111px;
+        height: 29px;
+        margin-top: 70px;
+        background-color: #ff6b08;
+        border: 0;
+        @include text-style(8px, 500, $white);
+        text-transform: uppercase;
+        box-shadow: 0px 5px 38px -1px rgba(255, 107, 8, 0.5);
+    }
+
+    .header-field-part2 {
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        width: 640px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-field-part4 {
+        width: 640px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 45px;
+    }
+
+    .header-field-part4-socials {
+        display: flex;
+    }
+
+    .header-field-part4__twt {
+        margin-left: 20px;
+    }
+
+    .header-field-part4-nums__part1 {
+        position: absolute;
+        @include text-style(32px, 700, $white);
+        transform: rotate(-90deg);
+    }
+
+    .header-field-part4-nums__part2 {
+        margin-top: 10px;
+        margin-left: 40px;
+        position: absolute;
+        @include text-style(16px, 700, $white);
+    }
+
+    .header-field-part4-nums__line {
+        position: absolute;
+        display: block;
+        margin-left: 35px;
+        content: "";
+        width: 2px;
+        height: 20px;
+        background-color: $white;
+    }
+
+    .header-field-part2-left-part__name__line1 {
+        display: inline-block;
+        content: "";
+        width: 44px;
+        height: 6px;
+        border: 1px solid white;
+        background-color: white;
+        margin-bottom: 15px;
+    }
+
+    .header-field-part2-left-part__name__line2 {
+        display: inline-block;
+        content: "";
+        width: 55px;
+        height: 6px;
+        border: 1px solid white;
+        background-color: white;
+        margin-bottom: 15px;
+    }
+
+    .br {
+        display: block;
+        position: relative;
+    }
+
+    .part__desc__right-arrow {
+        display: inline-block;
+        position: absolute;
+        padding-left: 20px;
+        @include text-style(12px, 700, cyan);
+    }
+
+    .part__desc__left-arrow {
+        left: -25px;
+        position: absolute;
+        padding-left: -20px;
+        @include text-style(12px, 700, cyan);
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1199px) {
+    .header {
+        background-image: url(../img/bg960.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .header-field {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 800px;
+
+    }
+
+
+    .header-field-part1__logo {
+        width: 71px;
+        height: 22px;
+    }
+
+    .header-field-part1__link__img {
+        width: 17px;
+        height: 11px;
+    }
+
+    .header-field-part2-left-part__name {
+        width: 437px;
+        @include text-style(56px, 700, $white);
+        text-transform: uppercase;
+    }
+
+    .header-field-part2-left-part__desc {
+        position: relative;
+        margin-top: 45px;
+        width: 220px;
+        @include text-style(10px, 700, $white);
+        text-transform: uppercase;
+    }
+
+    .header-field-part2-right-part__title {
+        width: 185px;
+        @include text-style(13px, 700, $white);
+        text-transform: uppercase;
+    }
+
+    .header-field-part2-right-part__description {
+        margin-top: 50px;
+        width: 166px;
+        @include text-style(12px, 500, #afb0b3);
+    }
+
+    .header-field-part2-left-part__btn {
+        width: 138px;
+        height: 36px;
+        margin-top: 70px;
+        background-color: #ff6b08;
+        border: 0;
+        @include text-style(9px, 700, $white);
+        text-transform: uppercase;
+        box-shadow: 0px 5px 38px -1px rgba(255, 107, 8, 0.5);
+    }
+
+
+    .header-field-part2 {
+        margin: 0 auto;
+        margin-top: 70px;
+        margin-bottom: 40px;
+        width: 800px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-field-part4 {
+        width: 800px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+    }
+
+    .header-field-part4-socials {
+        display: flex;
+    }
+
+    .header-field-part4__twt {
+        margin-left: 20px;
+    }
+
+    .header-field-part4-nums__part1 {
+        position: absolute;
+        @include text-style(32px, 700, $white);
+        transform: rotate(-90deg);
+    }
+
+    .header-field-part4-nums__part2 {
+        margin-top: 10px;
+        margin-left: 40px;
+        position: absolute;
+        @include text-style(16px, 700, $white);
+    }
+
+    .header-field-part4-nums__line {
+        position: absolute;
+        display: block;
+        margin-left: 35px;
+        content: "";
+        width: 2px;
+        height: 20px;
+        background-color: $white;
+    }
+
+    .header-field-part2-left-part__name__line1 {
+        display: inline-block;
+        content: "";
+        width: 55px;
+        height: 7px;
+        border: 1px solid white;
+        background-color: white;
+        margin-bottom: 15px;
+    }
+
+    .header-field-part2-left-part__name__line2 {
+        display: inline-block;
+        content: "";
+        width: 69px;
+        height: 7px;
+        border: 1px solid white;
+        background-color: white;
+        margin-bottom: 15px;
+    }
+
+    .br {
+        display: block;
+        position: relative;
+    }
+
+    .part__desc__right-arrow {
+        display: inline-block;
+        position: absolute;
+        padding-left: 20px;
+        @include text-style(12px, 700, cyan);
+    }
+
+    .part__desc__left-arrow {
+       left: -25px;
+        position: absolute;
+        padding-left: -20px;
+        @include text-style(12px, 700, cyan);
+    }
+
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+    .header {
+        background-image: url(../img/bg1200.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .header-field {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0 auto;
+        width: 1125px;
+    }
+
+    .header-field-part1__logo {
+        width: 63px;
+        height: 19px;
+    }
+
+    .header-field-part1__link__img {
+        width: 15px;
+        height: 10px;
+    }
+
+    .header-field-part2-left-part__name {
+        width: 392px;
+        @include text-style(50px, 700, $white);
+        text-transform: uppercase;
+    }
+
+    .header-field-part2-left-part__desc {
+        position: relative;
+        margin-top: 45px;
+        width: 194px;
+        @include text-style(9px, 700, $white);
+        text-transform: uppercase;
+    }
+
+    .header-field-part2-right-part__title {
+        width: 171px;
+        @include text-style(12px, 700, $white);
+        text-transform: uppercase;
+    }
+
+    .header-field-part2-right-part__description {
+        margin-top: 50px;
+        width: 149px;
+        @include text-style(11px, 500, #afb0b3);
+    }
+
+    .header-field-part2-left-part__btn {
+        width: 123px;
+        height: 33px;
+        margin-top: 70px;
+        background-color: #ff6b08;
+        border: 0;
+        @include text-style(8px, 700, $white);
+        text-transform: uppercase;
+        box-shadow: 0px 5px 38px -1px rgba(255, 107, 8, 0.5);
+    }
+
+    .header-field-part2 {
+        margin: 0 auto;
+        margin-top: 70px;
+        margin-bottom: 40px;
+        width: 715px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-field-part4 {
+        width: 1125px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    .header-field-part4-socials {
+        display: flex;
+    }
+
+    .header-field-part4__twt {
+        margin-left: 20px;
+    }
+
+    .header-field-part4-nums__part1 {
+        position: absolute;
+        @include text-style(32px, 700, $white);
+        transform: rotate(-90deg);
+    }
+
+
+    .header-field-part4-nums__part2 {
+        margin-top: 10px;
+        margin-left: 40px;
+        position: absolute;
+        @include text-style(16px, 700, $white);
+    }
+
+    .header-field-part4-nums__line {
+        position: absolute;
+        display: block;
+        margin-left: 35px;
+        content: "";
+        width: 2px;
+        height: 20px;
+        background-color: $white;
+    }
+
+    .header-field-part2-left-part__name__line1 {
+        display: inline-block;
+        content: "";
+        width: 49px;
+        height: 6px;
+        border: 1px solid white;
+        background-color: white;
+        margin-bottom: 15px;
+    }
+
+    .header-field-part2-left-part__name__line2 {
+        display: inline-block;
+        content: "";
+        width: 62px;
+        height: 6px;
+        border: 1px solid white;
+        background-color: white;
+        margin-bottom: 15px;
+    }
+
+    .br {
+        display: block;
+        position: relative;
+    }
+
+    .part__desc__right-arrow {
+        display: inline-block;
+        position: absolute;
+        padding-left: 20px;
+        @include text-style(12px, 700, cyan);
+    }
+
+    .part__desc__left-arrow {
+        left: -25px;
+        position: absolute;
+        padding-left: -20px;
+        @include text-style(12px, 700, cyan);
+    }
+}
+
+@media (min-width: 1440px) {
+    .header {
+        background-image: url(../img/bg1440.png);
+        background-size: cover;
+        /*!!!*/
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .header-field-part1__logo {
+        width: 75px;
+        height: 25px;
+    }
+
+    .header-field-part1__link__img {
+        width: 18px;
+        height: 11px;
+    }
+
+    .header-field-part2-left-part__name {
+        width: 461px;
+        @include text-style(59px, 700, $white);
+        text-transform: uppercase;
+    }
+
+    .header-field-part2-left-part__desc {
+        position: relative;
+        margin-top: 45px;
+        width: 240px;
+        @include text-style(11px, 700, $white);
+        text-transform: uppercase;
+    }
+
+    .header-field-part2-right-part__title {
+        width: 199px;
+        @include text-style(14px, 700, $white);
+        text-transform: uppercase;
+    }
+
+    .header-field-part2-right-part__description {
+        margin-top: 50px;
+        width: 177px;
+        @include text-style(13px, 500, #afb0b3);
+    }
+
+    .header-field-part2-left-part__btn {
+        width: 147px;
+        height: 38px;
+        margin-top: 70px;
+        background-color: #ff6b08;
+        border: 0;
+        @include text-style(10px, 700, $white);
+        text-transform: uppercase;
+        box-shadow: 0px 5px 38px -1px rgba(255, 107, 8, 0.5);
+    }
+
+    .header-field {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 1350px;
+    }
+
+    .header-field-part2 {
+        margin: 0 auto;
+        margin-top: 70px;
+        margin-bottom: 50px;
+        width: 860px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header-field-part4 {
+        width: 1350px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 45px;
+    }
+
+    .header-field-part4-socials {
+        display: flex;
+
+    }
+
+    .header-field-part4__twt {
+        margin-left: 20px;
+    }
+
+    .header-field-part4-nums__part1 {
+        position: absolute;
+        @include text-style(32px, 700, $white);
+        transform: rotate(-90deg);
+    }
+
+    .header-field-part4-nums__part2 {
+        margin-top: 10px;
+        margin-left: 40px;
+        position: absolute;
+        @include text-style(16px, 700, $white);
+    }
+
+    .header-field-part4-nums__line {
+        position: absolute;
+        display: block;
+        margin-left: 35px;
+        content: "";
+        width: 2px;
+        height: 20px;
+        background-color: $white;
+    }
+
+    .header-field-part2-left-part__name__line1 {
+        display: inline-block;
+        content: "";
+        width: 59px;
+        height: 7px;
+        border: 1px solid white;
+        background-color: white;
+        margin-bottom: 15px;
+    }
+
+    .header-field-part2-left-part__name__line2 {
+        display: inline-block;
+        content: "";
+        width: 74px;
+        height: 7px;
+        border: 1px solid white;
+        background-color: white;
+        margin-bottom: 15px;
+    }
+
+    .br {
+        display: block;
+        position: relative;
+    }
+
+    .part__desc__right-arrow {
+        display: inline-block;
+        position: absolute;
+        padding-left: 20px;
+        @include text-style(15px, 700, cyan);
+    }
+
+    .part__desc__left-arrow {
+        left: -25px;
+        position: absolute;
+        padding-left: -20px;
+        @include text-style(15px, 700, cyan);
+    }
+
+}

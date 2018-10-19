@@ -1,0 +1,625 @@
+.section16 {
+  @extend %section-rules;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__info {
+    width: 200px;
+    margin: 0 auto 18px;
+  }
+
+  &__title {
+    font-size: 0;
+    margin: 0 auto 14px;
+    text-align: center;
+  }
+
+  &__title-span1, &__title-span2 {
+    @include text-style ($size: 12px, $weight: 800, $color: $white);
+    background-color: $black;
+    text-transform: uppercase;
+  }
+
+  &__title-about {
+    @include text-style ($size: 9px, $weight: 500, $color: $text-color);
+    padding-left: 25px;
+    margin: 0 auto 40px;
+    width: 140px;
+    position: relative;
+  }
+
+  &__title-about:before {
+    @extend %black-line;
+    top: 10px;
+    left: 0;
+  }
+
+  &__list-item {
+    padding-left: 34px;
+    position: relative;
+  }
+
+  &__list-item-01:before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 28px;
+    background-image: url('../img/sec16-01.png');
+    top: 0;
+    left: 0;
+  }
+
+  &__list-item-02:before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 29px;
+    background-image: url('../img/sec16-02.png');
+    top: 0;
+    left: 0;
+  }
+
+  &__list-title {
+    @include text-style ($size: 9px, $weight: 800, $color: $text-color);
+    margin: 0 auto 11px;
+  }
+
+  &__list-subtitle {
+    @include text-style ($size: 8px, $weight: 400, $color: $text-color);
+    margin: 0 auto 11px;
+  }
+
+  &__list-subtitle--black {
+    @include text-style ($size: 8px, $weight: 400, $color: $white);
+    background-color: $black;
+  }
+
+  // work with to part - form
+  &__form {
+    margin: 0 auto;
+    padding: 44px 43px 44px 44px;
+    box-shadow: 0px 17px 32px 0px rgba(0, 0, 0, 0.15);
+  }
+
+  &__input::placeholder {
+    @include text-style ($size: 6px, $weight: 800, $color: $black);
+  }
+
+  &__input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #d9d9d9;
+    width: 160px;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+  }
+
+  &__input-email {
+    margin-bottom: 22px;
+  }
+
+  &__name {
+    @include text-style ($size: 5px, $weight: 800, $color: $text-color);
+    width: 80px;
+    opacity: .5;
+  }
+
+  &__button {
+    box-shadow: 0px 3px 4px 0px rgba(196, 87, 15, 0.26);
+    width: 116px;
+    text-transform: uppercase;
+    @include text-style ($size: 5px, $weight: 800, $color: $white);
+    padding: 9px 14px;
+    background-color: $orange;
+    border: none;
+    outline: none;
+  }
+}
+// all section16 rules, 320px
+
+@media (min-width: 480px) {
+  .section16 {
+    margin-top: 92px;
+
+    &__info {
+      width: 300px;
+      margin: 0 auto 25px;
+    }
+
+    &__title {
+      margin: 0 auto 23px;
+      text-align: center;
+    }
+
+    &__title-span1, &__title-span2 {
+      @include text-style ($size: 18px, $weight: 800, $color: $white);
+    }
+
+    &__title-about {
+      @include text-style ($size: 14px, $weight: 500, $color: $text-color);
+      padding-left: 39px;
+      margin: 0 auto 58px;
+      width: 210px;
+    }
+
+    &__list-title {
+      @include text-style ($size: 13px, $weight: 800, $color: $text-color);
+      margin: 0 auto 15px;
+    }
+
+    &__list-subtitle {
+      @include text-style ($size: 12px, $weight: 400, $color: $text-color);
+      margin: 0 auto;
+    }
+
+    &__list-subtitle--black {
+      @include text-style ($size: 12px, $weight: 400, $color: $white);
+    }
+
+    &__list-subtitle-one {
+      margin-bottom: 38px;
+    }
+
+    &__list-item {
+      padding-left: 51px;
+    }
+
+    &__list-item-01:before {
+      width: 33px;
+      height: 37px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    &__list-item-02:before {
+      width: 34px;
+      height: 38px;
+      background-image: url('../img/sec16-02.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    // work with to part - form
+    &__form {
+      margin: 0 auto;
+      padding: 67px 64px 67px 66px;
+      box-shadow: 0px 17px 32px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    &__input::placeholder {
+      @include text-style ($size: 9px, $weight: 800, $color: $black);
+    }
+
+    &__input {
+      width: 240px;
+      margin-bottom: 20px;
+    }
+
+    &__input-email {
+      margin-bottom: 32px;
+    }
+
+    &__name {
+      @include text-style ($size: 8px, $weight: 800, $color: $text-color);
+    }
+
+    &__button {
+      width: 175px;
+      @include text-style ($size: 8px, $weight: 800, $color: $white);
+      padding: 14px 21px 13px 22px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .section16 {
+    margin-top: 96px;
+    flex-wrap: nowrap;
+
+    &__info {
+      width: 250px;
+      margin: 0 90px 0 0;
+    }
+
+    &__title {
+      margin: 0 auto 30px;
+    }
+
+    &__title-span1, &__title-span2 {
+      @include text-style ($size: 27px, $weight: 800, $color: $white);
+    }
+
+    &__title-span {
+      display: block;
+    }
+
+    &__title-span2 {
+      margin-top: 4px;
+      width: 165px;
+    }
+
+    &__title-about {
+      @include text-style ($size: 9px, $weight: 500, $color: $text-color);
+      padding-left: 47px;
+      margin: 0 0 36px;
+      width: 140px;
+    }
+
+    &__title-about:before {
+      top: 3px;
+    }
+
+    &__list {
+      width: 202px;
+    }
+
+    &__list-title {
+      @include text-style ($size: 9px, $weight: 800, $color: $text-color);
+      margin: 0 0 11px;
+    }
+
+    &__list-subtitle {
+      @include text-style ($size: 8px, $weight: 400, $color: $text-color);
+      margin: 0;
+    }
+
+    &__list-subtitle--black {
+      @include text-style ($size: 8px, $weight: 400, $color: $white);
+    }
+
+    &__list-subtitle-one {
+      margin-bottom: 20px;
+    }
+
+    &__list-item {
+      padding-left: 35px;
+    }
+
+    &__list-item-01:before {
+      width: 19px;
+      height: 23px;
+    }
+
+    &__list-item-02:before {
+      width: 22px;
+      height: 25px;
+    }
+
+    // work with to part - form
+    &__form {
+      margin: 0;
+      padding: 56px 55px 57px;
+      box-shadow: 0px 17px 32px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    &__input::placeholder {
+      @include text-style ($size: 8px, $weight: 800, $color: $black);
+    }
+
+    &__input {
+      width: 204px;
+      margin-bottom: 20px;
+    }
+
+    &__input-email {
+      margin-bottom: 32px;
+    }
+
+    &__name {
+      @include text-style ($size: 7px, $weight: 800, $color: $text-color);
+    }
+
+    &__button {
+      width: 150px;
+      @include text-style ($size: 7px, $weight: 800, $color: $white);
+      padding: 12px 18px 11px 19px;
+    }
+  }
+}
+
+@media (min-width: 960px) {
+  .section16 {
+    margin-top: 121px;
+    justify-content: space-between;
+
+    &__info {
+      width: 39%;
+      margin: 0;
+    }
+
+    &__title-span1, &__title-span2 {
+    @include text-style ($size: 34px, $weight: 800, $color: $white);
+    }
+
+    &__title-span2 {
+      width: 298px;
+    }
+
+    &__title-span2 {
+      margin-top: 4px;
+      width: 205px;
+    }
+
+    &__title-about {
+      @include text-style ($size: 11px, $weight: 500, $color: $text-color);
+      padding-left: 58px;
+      margin: 0 0 45px;
+      width: 180px;
+    }
+
+    &__title-about:before {
+      top: 3px;
+    }
+
+    &__list {
+      width: 260px;
+    }
+
+    &__list-title {
+      @include text-style ($size: 11px, $weight: 800, $color: $text-color);
+      margin: 0 0 14px;
+    }
+
+    &__list-subtitle {
+      @include text-style ($size: 10px, $weight: 400, $color: $text-color);
+      margin: 0;
+    }
+
+    &__list-subtitle--black {
+      @include text-style ($size: 10px, $weight: 400, $color: $white);
+    }
+
+    &__list-subtitle-one {
+      margin-bottom: 27px;
+    }
+
+    &__list-item {
+      padding-left: 46px;
+    }
+
+    &__list-item-01:before {
+      width: 24px;
+      height: 28px;
+    }
+
+    &__list-item-02:before {
+      width: 27px;
+      height: 30px;
+    }
+
+    // work with to part - form
+    &__form {
+      margin: 0;
+      padding: 70px 68px 70px 68px;
+      box-shadow: 0px 14px 27px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    &__input::placeholder {
+      @include text-style ($size: 10px, $weight: 800, $color: $black);
+    }
+
+    &__input {
+      width: 254px;
+      margin-bottom: 21px;
+    }
+
+    &__input-email {
+      margin-bottom: 34px;
+    }
+
+    &__name {
+      @include text-style ($size: 9px, $weight: 800, $color: $text-color);
+    }
+
+    &__button {
+      width: 150px;
+      @include text-style ($size: 8px, $weight: 800, $color: $white);
+      padding: 15px 23px 13px 23px;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .section16 {
+    margin-top: 122px;
+    justify-content: space-between;
+
+    &__info {
+      width: 40%;
+      margin: 0;
+    }
+
+    &__title-span1, &__title-span2 {
+    @include text-style ($size: 30px, $weight: 800, $color: $white);
+    }
+
+    &__title-span1 {
+      width: 275px;
+    }
+
+    &__title-span2 {
+      margin-top: 5px;
+      width: 185px;
+    }
+
+    &__title-about {
+      @include text-style ($size: 10px, $weight: 500, $color: $text-color);
+      padding-left: 40px;
+      margin: 0 0 45px;
+      width: 155px;
+    }
+
+    &__title-about:before {
+      top: 3px;
+    }
+
+    &__list {
+      width: 230px;
+    }
+
+    &__list-title {
+      @include text-style ($size: 10px, $weight: 800, $color: $text-color);
+      margin: 0 0 12px;
+    }
+
+    &__list-subtitle {
+      @include text-style ($size: 9px, $weight: 400, $color: $text-color);
+      margin: 0;
+    }
+
+    &__list-subtitle--black {
+      @include text-style ($size: 10px, $weight: 400, $color: $white);
+    }
+
+    &__list-subtitle-one {
+      margin-bottom: 23px;
+    }
+
+    &__list-item {
+      padding-left: 41px;
+    }
+
+    &__list-item-01:before {
+      width: 24px;
+      height: 28px;
+    }
+
+    &__list-item-02:before {
+      width: 27px;
+      height: 30px;
+    }
+
+    // work with to part - form
+    &__form {
+      margin: 0;
+      padding: 62px 60px 62px 62px;
+      box-shadow: 0px 14px 27px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    &__input::placeholder {
+      @include text-style ($size: 9px, $weight: 800, $color: $black);
+    }
+
+    &__input {
+      width: 226px;
+      margin-bottom: 18px;
+    }
+
+    &__input-email {
+      margin-bottom: 31px;
+    }
+
+    &__name {
+      @include text-style ($size: 9px, $weight: 800, $color: $text-color);
+    }
+
+    &__button {
+      width: 165px;
+      @include text-style ($size: 7px, $weight: 800, $color: $white);
+      padding: 12px 20px 13px 20px;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .section16 {
+    margin-top: 147px;
+    justify-content: space-between;
+
+    &__info {
+      width: 38%;
+      margin: 0;
+    }
+
+    &__title-span1, &__title-span2 {
+    @include text-style ($size: 34px, $weight: 800, $color: $white);
+    }
+
+    &__title-span1 {
+      width: 320px;
+    }
+
+    &__title-span2 {
+      margin-top: 4px;
+      width: 215px;
+    }
+
+    &__title-about {
+      @include text-style ($size: 11px, $weight: 500, $color: $text-color);
+      padding-left: 58px;
+      margin: 0 0 45px;
+      width: 180px;
+    }
+
+    &__title-about:before {
+      top: 3px;
+    }
+
+    &__list {
+      width: 265px;
+    }
+
+    &__list-title {
+      @include text-style ($size: 11px, $weight: 800, $color: $text-color);
+      margin: 0 0 14px;
+    }
+
+    &__list-subtitle {
+      @include text-style ($size: 10px, $weight: 400, $color: $text-color);
+      margin: 0;
+    }
+
+    &__list-subtitle--black {
+      @include text-style ($size: 10px, $weight: 400, $color: $white);
+    }
+
+    &__list-subtitle-one {
+      margin-bottom: 27px;
+    }
+
+    &__list-item {
+      padding-left: 46px;
+    }
+
+    &__list-item-01:before {
+      width: 24px;
+      height: 28px;
+    }
+
+    &__list-item-02:before {
+      width: 27px;
+      height: 30px;
+    }
+
+    // work with to part - form
+    &__form {
+      margin: 0;
+      padding: 75px 73px 75px 74px;
+      box-shadow: 0px 14px 27px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    &__input::placeholder {
+      @include text-style ($size: 10px, $weight: 800, $color: $black);
+    }
+
+    &__input {
+      width: 271px;
+      margin-bottom: 21px;
+    }
+
+    &__input-email {
+      margin-bottom: 36px;
+    }
+
+    &__name {
+      @include text-style ($size: 9px, $weight: 800, $color: $text-color);
+    }
+
+    &__button {
+      width: 196px;
+      @include text-style ($size: 8px, $weight: 800, $color: $white);
+      padding: 15px 24px 15px 25px;
+    }
+  }
+}

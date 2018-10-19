@@ -1,0 +1,238 @@
+.section12{
+    
+    width: 300px;
+    display: flex;
+   flex-wrap: wrap;
+    margin: 46px auto;
+
+    @media (min-width: 480px){
+        width: 450px; 
+       margin-top: 68px;
+    }
+    @media (min-width: 768px){
+        width: 640px;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin-top: 106px;
+    }
+    @media (min-width: 960px){
+        width: 800px;
+        margin-top: 130px;
+    }
+    @media (min-width: 1200px){
+        width: 715px;
+        margin-top: 122px;
+        justify-content: flex-start;
+    }
+    @media (min-width: 1440px){
+        width: 860px;
+        margin-top: 147px;
+     }
+
+&__img{
+display: block;
+margin: 0 auto;
+@media (min-width: 480px){
+        margin: 0 auto;
+}
+
+}    
+}
+.section12-text{
+    width: 160px;
+    margin: auto;
+    @media (min-width: 480px){
+        width: 240px;
+        margin: auto;
+    }
+    @media (min-width: 768px){
+        width: 240px;
+        margin-right: 33px;
+        
+    }
+    @media (min-width: 960px){
+        width: 300px;
+        margin-right: 42px;
+        
+    }
+    @media (min-width: 1200px){
+        width: 266px;
+        margin-right: 37px;
+        }
+        @media (min-width: 1440px){
+            width: 318px;
+            margin-right: 46px;
+            }
+&__title{
+    width: 144px;
+    @include text-style ($size: 12px, $weight: 900,$color: $black);
+    margin-bottom: 14px;
+    text-transform: uppercase;
+
+    @media (min-width: 480px){
+        width: 215px;
+        @include text-style ($size: 15px, $weight: 900,$color: $black);
+        margin-bottom: 21px;
+    }
+    @media (min-width: 768px){
+        width: 239px;
+        @include text-style ($size: 28px, $weight: 900,$color: $black);
+        margin-bottom: 27px;
+    }
+    @media (min-width: 960px){
+        width: 298px;
+        @include text-style ($size: 34px, $weight: 900,$color: $black);
+        margin-bottom: 34px;
+    }
+    @media (min-width: 1200px){
+        width: 266px;
+        @include text-style ($size: 30px, $weight: 900,$color: $black);
+        margin-bottom: 31px;
+    }
+    @media (min-width: 1440px){
+        width: 318px;
+        @include text-style ($size: 38px, $weight: 900,$color: $black);
+        margin-bottom: 37px;
+    }
+}
+&__subtitle{
+    width: 138px;
+    @include text-style ($size: 9px, $weight: 500,$color: $black);
+    margin: 0 auto 16px 21px;
+    position: relative;
+    @media (min-width: 480px){
+        width: 206px;
+        @include text-style ($size: 12px, $weight: 500,$color: $black);
+        margin-left: 29px;
+        margin-bottom: 24px;
+    }
+    @media (min-width: 768px){
+        width: 137px;
+        @include text-style ($size: 8px, $weight: 500,$color: $black);
+        margin-left: 48px;
+        
+    }
+    @media (min-width: 960px){
+        width: 171px;
+        @include text-style ($size: 11px, $weight: 500,$color: $black);
+        margin-left: 55px;
+        
+    }
+    @media (min-width: 1200px){
+        width: 155px;
+        @include text-style ($size: 10px, $weight: 500,$color: $black);
+        margin-left: 50px;
+    }
+    @media (min-width: 1440px){
+        width: 183px;
+        @include text-style ($size: 11px, $weight: 500,$color: $black);
+        margin-left: 63px;
+    }
+}
+}
+.section12-info{
+    width: 155px;
+    margin: auto;
+    @media (min-width: 480px){
+        width: 215px;
+        margin: auto;
+    }
+    @media (min-width: 768px){
+        width: 140px;
+        margin: 0 0 0 38px;
+    }
+    @media (min-width: 960px){
+        width: 175px;
+        margin: 0 0 0 47px;
+    }
+    @media (min-width: 1200px){
+        width: 155px;
+        margin: 0 0 0 41px;
+    }
+    @media (min-width: 1440px){
+        width: 185px;
+        margin: 0 0 0 50px;
+    }
+  
+&__headline{
+    width: 133px;
+    @include text-style ($size: 9px, $weight: 900,$color: $black);
+    margin: 26px 0 10px;
+    text-transform: uppercase;
+    @media (min-width: 480px){
+        width: 200px;
+        @include text-style ($size: 13px, $weight: 900,$color: $black);
+        margin: 39px 0 15px;
+    }
+    @media (min-width: 768px){
+        width: 131px;
+        @include text-style ($size: 13px, $weight: 900,$color: $black);
+        margin: 0px 0 17px;
+    }
+    @media (min-width: 960px){
+        width: 121px;
+        @include text-style ($size: 11px, $weight: 900,$color: $black);
+        margin: 0px 0 21px;
+    }
+    @media (min-width: 1200px){
+        width: 110px;
+        @include text-style ($size: 10px, $weight: 900,$color: $black);
+        margin: 0px 0 18px;
+    }
+    @media (min-width: 1440px){
+        width: 153px;
+        @include text-style ($size: 14px, $weight: 900,$color: $black);
+        margin: 0px 0 21px;
+    }
+}
+&__text{
+    width: 144px;
+    @include text-style ($size: 9px, $weight: 400,$color: $text-color);
+    @media (min-width: 480px){
+        width: 213px;
+        @include text-style ($size: 13px, $weight: 400,$color: $text-color);
+    }
+    @media (min-width: 768px){
+        width: 144px;
+        @include text-style ($size: 9px, $weight: 400,$color: $text-color);
+    }
+    @media (min-width: 960px){
+        width: 171px;
+        @include text-style ($size: 10px, $weight: 400,$color: $text-color);
+    }
+    @media (min-width: 1200px){
+        width: 153px;
+        @include text-style ($size: 9px, $weight: 400,$color: $text-color);
+    }
+    @media (min-width: 1440px){
+        width: 192px;
+        @include text-style ($size: 12px, $weight: 400,$color: $text-color);
+    }
+}    
+}
+
+.section12-text__subtitle::before{
+    @extend %black-line;
+    left: -18px;
+    bottom: 38px;
+    @media (min-width: 480px){
+        left: -27px;
+        bottom: 48px;
+        }
+        @media (min-width: 768px){
+            left: -45px;
+            bottom: 33px;
+            }
+            @media (min-width: 960px){
+                left: -53px;
+                bottom: 43px;
+                }
+                @media (min-width: 1200px){
+                    left: -45px;
+                    bottom: 38px;
+                    }
+                    @media (min-width: 1440px){
+                        left: -62px;
+                        bottom: 41px;
+                        }
+}

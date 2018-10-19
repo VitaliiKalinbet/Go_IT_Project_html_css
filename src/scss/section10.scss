@@ -1,0 +1,800 @@
+.section10 {
+  @extend %section-rules;
+  margin-top: 54px;
+
+  // section10 block info, 320px
+  &-info {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      @include text-style ($size: 12px, $weight: 800, $color: rgba(0, 0, 0, 255));
+      width: 252px;
+      margin: 0 auto 15px;
+      text-transform: uppercase;
+
+      &-about {
+        @include text-style ($size: 9px, $weight: 500, $color: rgba(0, 0, 0, 255));
+        width: 182px;
+        margin: 0 auto 25px;
+        padding-left: 18px;
+        position: relative;
+        order: 1;
+      }
+
+      &-about:before {
+        @extend %black-line;
+        top: 9px;
+        left: 0;
+      }
+    }
+
+    &__subtitle {
+      @include text-style ($size: 9px, $weight: 800, $color: $black);
+      width: 162px;
+      margin: 0 auto 11px;
+      padding-right: 27px;
+      text-transform: uppercase;
+    }
+
+    &__subtitle-about {
+      @include text-style ($size: 9px, $weight: 400, $color: $text-color);
+      width: 187px;
+      margin: 0 auto 26px;
+    }
+
+    &__img {
+      width: 296px;
+      margin: 0 auto 41px;
+    }
+  }
+
+  // section10 block awards-list, 320px
+  &-awards-list {
+    display: flex;
+    flex-direction: column;
+    width: 195px;
+    margin: 0 auto;
+  }
+
+  &-awards-list__item {
+    position: relative;
+  }
+
+  &-awards-list__item:nth-child(-n+3) {
+    margin-bottom: 28px;
+  }
+
+  &-awards-list__title {
+    @include text-style ($size: 9px, $weight: 800, $color: $black);
+    width: 110px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+  }
+
+  &-awards-list__title--oon {
+    width: 122px;
+  }
+
+  &-awards-list__subtitle {
+    @include text-style ($size: 9px, $weight: 400, $color: $text-color);
+  }
+
+  &-awards-list__subtitle--oon {
+    width: 197px;
+  }
+
+  &-awards-list__subtitle--stat {
+    width: 167px;
+  }
+
+  &-awards-list__subtitle--box {
+    width: 150px;
+  }
+
+  &-awards-list__go {
+    @include text-style ($size: 8px, $weight: 500, $color: $white);
+    background-color: $black;
+    width: 52px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  &-awards-list__recognized {
+    @include text-style ($size: 8px, $weight: 500, $color: $white);
+    background-color: $black;
+    width: 146px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  // section 10 - connect all the pictures to the list with pseudo-elements, 320px
+  &-awards-list__oon:after {
+    @include sec10-after-before ($width:53px, $height: 45px, $back-img: url('../img/sec10-320-oon.png'), $top: 0, $right: 0);
+  }
+
+  &-awards-list__stat:before {
+    @include sec10-after-before ($width:25px, $height: 49px, $back-img: url('../img/sec10-320-01.png'), $top: 20px, $right: 50px);
+  }
+
+  &-awards-list__stat:after {
+    @include sec10-after-before ($width:27px, $height: 90px, $back-img: url('../img/sec10-320-stat.png'), $top: 35px, $right: 0);
+  }
+
+  &-awards-list__box2:after, &-awards-list__box3:after {
+    @include sec10-after-before ($width: 36px, $height: 72px, $back-img: url('../img/sec10-320-box.png'), $top: 0, $right: 0);
+  }
+
+  &-awards-list__box2:before {
+    @include sec10-after-before ($width:26px, $height: 50px, $back-img: url('../img/sec10-320-02.png'), $top: -10px, $right: 50px);
+  }
+
+  &-awards-list__box3:before {
+    @include sec10-after-before ($width:25px, $height: 50px, $back-img: url('../img/sec10-320-03.png'), $top: -10px, $right: 50px);
+  }
+}
+// section10 - all ruls for 320px
+
+// section10 media-rules for 480px+++++++++++++++++++++++++++++++++++++++
+@media (min-width: 480px) and (max-width:767px) {
+  .section10 {
+    margin-top: 81px;
+
+    // section10 block info, 480px
+    &-info {
+
+      &__title {
+        @include text-style ($size: 18px, $weight: 800, $color: rgba(0, 0, 0, 255));
+        width: 380px;
+        margin: 0 auto 21px;
+
+        &-about {
+          @include text-style ($size: 14px, $weight: 500, $color: rgba(0, 0, 0, 255));
+          width: 273px;
+          margin: 0 auto 40px;
+          padding-left: 27px;
+        }
+      }
+
+      &__subtitle {
+        @include text-style ($size: 14px, $weight: 800, $color: $black);
+        width: 260px;
+        margin: 0 auto 16px;
+        padding-right: 40px;
+      }
+
+      &__subtitle-about {
+        @include text-style ($size: 14px, $weight: 400, $color: $text-color);
+        width: 290px;
+        margin: 0 auto 40px;
+      }
+
+      &__img {
+        width: 445px;
+        margin: 0 auto 62px;
+      }
+    }
+
+    // section10 block awards-list, 480px
+    &-awards-list {
+      width: 320px;
+    }
+
+    &-awards-list__item:nth-child(-n+3) {
+      margin-bottom: 45px;
+    }
+
+    &-awards-list__title {
+      @include text-style ($size: 14px, $weight: 800, $color: $black);
+      width: 172px;
+      margin-bottom: 14px;
+    }
+
+    &-awards-list__title--oon {
+      width: 190px;
+    }
+
+    &-awards-list__subtitle {
+      @include text-style ($size: 14px, $weight: 400, $color: $text-color);
+    }
+
+    &-awards-list__subtitle--oon {
+      width: 300px;
+    }
+
+    &-awards-list__subtitle--stat {
+      width: 260px;
+    }
+
+    &-awards-list__subtitle--box {
+      width: 233px;
+    }
+
+    &-awards-list__go {
+      @include text-style ($size: 12px, $weight: 500, $color: $white);
+      width: 80px;
+      margin-bottom: 38px;
+    }
+
+    &-awards-list__recognized {
+      @include text-style ($size: 12px, $weight: 500, $color: $white);
+      width: 220px;
+      margin-bottom: 31px;
+    }
+
+    // section 10 - connect all the pictures to the list with pseudo-elements, 480px
+    &-awards-list__oon:after {
+      @include sec10-after-before ($width:80px, $height: 68px, $back-img: url('../img/sec10-480-oon.png'), $top: 0, $right: 0);
+    }
+
+    &-awards-list__stat:before {
+      @include sec10-after-before ($width:38px, $height: 72px, $back-img: url('../img/sec10-480-01.png'), $top: 20px, $right: 100px);
+    }
+
+    &-awards-list__stat:after {
+      @include sec10-after-before ($width: 41px, $height: 136px, $back-img: url('../img/sec10-480-stat.png'), $top: 35px, $right: 0);
+    }
+
+    &-awards-list__box2:after, &-awards-list__box3:after {
+      @include sec10-after-before ($width: 54px, $height: 109px, $back-img: url('../img/sec10-480-box.png'), $top: 0, $right: 0);
+    }
+
+    &-awards-list__box2:before {
+      @include sec10-after-before ($width: 37px, $height: 75px, $back-img: url('../img/sec10-480-02.png'), $top: -15px, $right: 100px);
+    }
+
+    &-awards-list__box3:before {
+      @include sec10-after-before ($width: 37px, $height: 74px, $back-img: url('../img/sec10-480-03.png'), $top: -15px, $right: 100px);
+    }
+  }
+  // section10 - all ruls for 480px
+}
+// section10 - all media-ruls for 480px
+
+// section10 media-rules for 768px++++++++++++++++++++++++++++++++++++++++
+@media (min-width: 768px) and (max-width:959px) {
+  .section10 {
+    margin-top: 100px;
+
+    // section10 block info, 768px
+    &-info {
+      height: 230px;
+      flex-wrap: wrap;
+      margin-bottom: 70px;
+
+      &__title {
+        @include text-style ($size: 27px, $weight: 800, $color: rgba(0, 0, 0, 255));
+        width: 36%;
+        margin: 0 10% 4.5% 0;
+
+        &-about {
+          @include text-style ($size: 9px, $weight: 500, $color: rgba(0, 0, 0, 255));
+          width: 154px;
+          margin: 0 94px 0 0;
+          padding-left: 2.93rem;
+          order: 0;
+        }
+      }
+
+      &__people-about {
+        display: flex;
+        flex-direction: row;
+        width: 54%;
+      }
+
+      &__subtitle {
+        @include text-style ($size: 9px, $weight: 800, $color: $black);
+        width: 27%;
+        margin: 1% 5% 8% 10%;
+        padding: 0;
+      }
+
+      &__subtitle-about {
+        @include text-style ($size: 8px, $weight: 400, $color: $text-color);
+        width: 35%;
+        margin: 1% 25% 7% 0;
+      }
+
+      &__img {
+        width: 344px;
+        margin: 0 auto;
+      }
+    }
+
+    // section10 block awards-list, 768px
+    &-awards-list {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    &-awards-list__item {
+      width: 25%;
+      margin: 0;
+    }
+
+    .section10-awards-list__item:nth-child(-n+3) {
+      margin-bottom: 0;
+    }
+
+    &-awards-list__title {
+      @include text-style ($size: 9px, $weight: 800, $color: $black);
+      width: 60px;
+      margin-bottom: 1.4%;
+    }
+
+    &-awards-list__title--box {
+      margin-top: 38px;
+    }
+
+    &-awards-list__title--oon {
+      width: 130px;
+    }
+
+    &-awards-list__subtitle {
+      @include text-style ($size: 8px, $weight: 400, $color: $text-color);
+    }
+
+    &-awards-list__subtitle--oon {
+      width: 140px;
+    }
+
+    &-awards-list__subtitle--stat, &-awards-list__subtitle--box {
+      width: 87px;
+    }
+
+      &-awards-list__go {
+      @include text-style ($size: 9px, $weight: 500, $color: $white);
+      width: 60px;
+      margin-bottom: 28px;
+    }
+
+    &-awards-list__recognized {
+      @include text-style ($size: 9px, $weight: 500, $color: $white);
+      width: 159px;
+      margin-bottom: 28px;
+    }
+
+    // section 10 - connect all the pictures to the list with pseudo-elements, 768px
+    &-awards-list__oon:after {
+      @include sec10-after-before ($width: 58px, $height: 50px, $back-img: url('../img/sec10-768-oon.png'), $top: 0, $right: 20px);
+      z-index: -1;
+    }
+
+    &-awards-list__stat:before {
+      @include sec10-after-before ($width: 29px, $height: 56px, $back-img: url('../img/sec10-768-01.png'), $top: 20px, $right: 10px);
+      z-index: 1;
+    }
+
+    &-awards-list__stat:after {
+      @include sec10-after-before ($width: 29px, $height: 98px, $back-img: url('../img/sec10-768-stat.png'), $top: 30px, $right: 30px);
+    }
+
+    &-awards-list__box2:after, &-awards-list__box3:after {
+      @include sec10-after-before ($width: 40px, $height: 79px, $back-img: url('../img/sec10-768-box.png'), $top: 20px, $right: 25px);
+    }
+
+    &-awards-list__box2:before {
+      @include sec10-after-before ($width: 29px, $height: 58px, $back-img: url('../img/sec10-768-02.png'), $top: 20px, $right: 10px);
+      z-index: 1;
+    }
+
+    &-awards-list__box3:before {
+      @include sec10-after-before ($width: 29px, $height: 58px, $back-img: url('../img/sec10-768-03.png'), $top: 20px, $right: 10px);
+      z-index: 1;
+    }
+  }
+  // section10 - all ruls for 768px
+}
+// section10 - all media-ruls for 768px
+
+// section10 media-rules for 960px++++++++++++++++++++++++++++++++++++++++
+@media (min-width: 960px) and (max-width:1199px) {
+  .section10 {
+    margin-top: 124px;
+
+    // section10 block info, 960px
+    &-info {
+      height: 285px;
+      flex-wrap: wrap;
+      margin-bottom: 80px;
+
+      &__title {
+        @include text-style ($size: 34px, $weight: 800, $color: rgba(0, 0, 0, 255));
+        width: 35.5%;
+        margin: 0 10.6% 4.5% 0;
+
+        &-about {
+          @include text-style ($size: 11px, $weight: 500, $color: rgba(0, 0, 0, 255));
+          width: 192px;
+          margin: 0 14.75% 0 0;
+          padding-left: 2.93rem;
+          order: 0;
+        }
+      }
+
+      &__people-about {
+        display: flex;
+        flex-direction: row;
+        width: 54%;
+      }
+
+      &__subtitle {
+        @include text-style ($size: 11px, $weight: 800, $color: $black);
+        width: 27%;
+        margin: 1% 5% 8% 10%;
+        padding: 0;
+      }
+
+      &__subtitle-about {
+        @include text-style ($size: 10px, $weight: 400, $color: $text-color);
+        width: 35%;
+        margin: 1% 25% 7% 0;
+      }
+
+      &__img {
+        width: 430px;
+        margin: 0 auto;
+      }
+    }
+
+    // section10 block awards-list, 960px
+    &-awards-list {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    &-awards-list__item {
+      width: 25%;
+      margin: 0;
+    }
+
+    .section10-awards-list__item:nth-child(-n+3) {
+      margin-bottom: 0;
+    }
+
+    &-awards-list__title {
+      @include text-style ($size: 11px, $weight: 800, $color: $black);
+      width: 70px;
+      margin-bottom: 1.75%;
+    }
+
+    &-awards-list__title--box {
+      margin-top: 48px;
+    }
+
+    &-awards-list__title--oon {
+      width: 155px;
+    }
+
+    &-awards-list__subtitle {
+      @include text-style ($size: 10px, $weight: 400, $color: $text-color);
+    }
+
+    &-awards-list__subtitle--oon {
+      width: 170px;
+    }
+
+    &-awards-list__subtitle--stat, &-awards-list__subtitle--box {
+      width: 110px;
+    }
+
+      &-awards-list__go {
+      @include text-style ($size: 11px, $weight: 500, $color: $white);
+      width: 72px;
+      margin-bottom: 35px;
+    }
+
+    &-awards-list__recognized {
+      @include text-style ($size: 11px, $weight: 500, $color: $white);
+      width: 200px;
+      margin-bottom: 35px;
+    }
+
+    // section 10 - connect all the pictures to the list with pseudo-elements, 960px
+    &-awards-list__oon:after {
+      @include sec10-after-before ($width: 73px, $height: 62px, $back-img: url('../img/sec10-960-oon.png'), $top: 0, $right: 20px);
+      z-index: -1;
+    }
+
+    &-awards-list__stat:before {
+      @include sec10-after-before ($width: 36px, $height: 68px, $back-img: url('../img/sec10-960-01.png'), $top: 20px, $right: 10px);
+      z-index: 1;
+    }
+
+    &-awards-list__stat:after {
+      @include sec10-after-before ($width: 37px, $height: 122px, $back-img: url('../img/sec10-960-stat.png'), $top: 30px, $right: 30px);
+    }
+
+    &-awards-list__box2:after, &-awards-list__box3:after {
+      @include sec10-after-before ($width: 50px, $height: 99px, $back-img: url('../img/sec10-960-box.png'), $top: 20px, $right: 25px);
+    }
+
+    &-awards-list__box2:before {
+      @include sec10-after-before ($width: 35px, $height: 71px, $back-img: url('../img/sec10-960-02.png'), $top: 20px, $right: 10px);
+      z-index: 1;
+    }
+
+    &-awards-list__box3:before {
+      @include sec10-after-before ($width: 35px, $height: 71px, $back-img: url('../img/sec10-960-03.png'), $top: 20px, $right: 10px);
+      z-index: 1;
+    }
+  }
+  // section10 - all ruls for 960px
+}
+// section10 - all media-ruls for 960px
+
+// section10 media-rules for 1200px++++++++++++++++++++++++++++++++++++++++
+@media (min-width: 1200px) and (max-width:1439px) {
+  .section10 {
+    margin-top: 121px;
+
+    // section10 block info, 1200px
+    &-info {
+      height: 260px;
+      flex-wrap: wrap;
+      margin-bottom: 73px;
+
+      &__title {
+        @include text-style ($size: 30px, $weight: 800, $color: rgba(0, 0, 0, 255));
+        width: 35.5%;
+        margin: 0 10.6% 4.5% 0;
+
+        &-about {
+          @include text-style ($size: 10px, $weight: 500, $color: rgba(0, 0, 0, 255));
+          width: 171px;
+          margin: 0 14.75% 0 0;
+          padding-left: 2.93rem;
+          order: 0;
+        }
+      }
+
+      &__people-about {
+        display: flex;
+        flex-direction: row;
+        width: 54%;
+      }
+
+      &__subtitle {
+        @include text-style ($size: 10px, $weight: 800, $color: $black);
+        width: 27%;
+        margin: 1% 5% 8% 10%;
+        padding: 0;
+      }
+
+      &__subtitle-about {
+        @include text-style ($size: 9px, $weight: 400, $color: $text-color);
+        width: 35%;
+        margin: 1% 25% 7% 0;
+      }
+
+      &__img {
+        width: 384px;
+        margin: 0 auto;
+      }
+    }
+
+    // section10 block awards-list, 1200px
+    &-awards-list {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    &-awards-list__item {
+      width: 25%;
+      margin: 0;
+    }
+
+    .section10-awards-list__item:nth-child(-n+3) {
+      margin-bottom: 0;
+    }
+
+    &-awards-list__title {
+      @include text-style ($size: 10px, $weight: 800, $color: $black);
+      width: 70px;
+      margin-bottom: 1.75%;
+    }
+
+    &-awards-list__title--box {
+      margin-top: 43px;
+    }
+
+    &-awards-list__title--oon {
+      width: 140px;
+    }
+
+    &-awards-list__subtitle {
+      @include text-style ($size: 9px, $weight: 400, $color: $text-color);
+    }
+
+    &-awards-list__subtitle--oon {
+      width: 155px;
+    }
+
+    &-awards-list__subtitle--stat, &-awards-list__subtitle--box {
+      width: 100px;
+    }
+
+      &-awards-list__go {
+      @include text-style ($size: 10px, $weight: 500, $color: $white);
+      width: 70px;
+      margin-bottom: 31px;
+    }
+
+    &-awards-list__recognized {
+      @include text-style ($size: 10px, $weight: 500, $color: $white);
+      width: 175px;
+      margin-bottom: 31px;
+    }
+
+    // section 10 - connect all the pictures to the list with pseudo-elements, 1200px
+    &-awards-list__oon:after {
+      @include sec10-after-before ($width: 64px, $height: 55px, $back-img: url('../img/sec10-1200-oon.png'), $top: 0, $right: 20px);
+      z-index: -1;
+    }
+
+    &-awards-list__stat:before {
+      @include sec10-after-before ($width: 32px, $height: 60px, $back-img: url('../img/sec10-1200-01.png'), $top: 20px, $right: 10px);
+      z-index: 1;
+    }
+
+    &-awards-list__stat:after {
+      @include sec10-after-before ($width: 32px, $height: 109px, $back-img: url('../img/sec10-1200-stat.png'), $top: 30px, $right: 30px);
+    }
+
+    &-awards-list__box2:after, &-awards-list__box3:after {
+      @include sec10-after-before ($width: 45px, $height: 88px, $back-img: url('../img/sec10-1200-box.png'), $top: 20px, $right: 25px);
+    }
+
+    &-awards-list__box2:before {
+      @include sec10-after-before ($width: 31px, $height: 62px, $back-img: url('../img/sec10-1200-02.png'), $top: 20px, $right: 10px);
+      z-index: 1;
+    }
+
+    &-awards-list__box3:before {
+      @include sec10-after-before ($width: 32px, $height: 62px, $back-img: url('../img/sec10-1200-03.png'), $top: 20px, $right: 10px);
+      z-index: 1;
+    }
+  }
+  // section10 - all ruls for 1200px
+}
+// section10 - all media-ruls for 1200px
+
+// section10 media-rules for 1440px++++++++++++++++++++++++++++++++++++++++
+@media (min-width: 1440px) {
+  .section10 {
+    margin-top: 144px;
+
+    // section10 block info, 1440px
+    &-info {
+      height: 315px;
+      flex-wrap: wrap;
+      margin-bottom: 87px;
+
+      &__title {
+        @include text-style ($size: 36px, $weight: 800, $color: rgba(0, 0, 0, 255));
+        width: 35.5%;
+        margin: 0 10.6% 4.5% 0;
+
+        &-about {
+          @include text-style ($size: 12px, $weight: 500, $color: rgba(0, 0, 0, 255));
+          width: 204px;
+          margin: 0 14.75% 0 0;
+          padding-left: 2.93rem;
+          order: 0;
+        }
+      }
+
+      &__people-about {
+        display: flex;
+        flex-direction: row;
+        width: 54%;
+      }
+
+      &__subtitle {
+        @include text-style ($size: 12px, $weight: 800, $color: $black);
+        width: 27%;
+        margin: 1% 5% 8% 10%;
+        padding: 0;
+      }
+
+      &__subtitle-about {
+        @include text-style ($size: 11px, $weight: 400, $color: $text-color);
+        width: 35%;
+        margin: 1% 25% 7% 0;
+      }
+
+      &__img {
+        width: 460px;
+        margin: 0 auto;
+      }
+    }
+
+    // section10 block awards-list, 1440px
+    &-awards-list {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    &-awards-list__item {
+      width: 25%;
+      margin: 0;
+    }
+
+    .section10-awards-list__item:nth-child(-n+3) {
+      margin-bottom: 0;
+    }
+
+    &-awards-list__title {
+      @include text-style ($size: 12px, $weight: 800, $color: $black);
+      width: 78px;
+      margin-bottom: 1.75%;
+    }
+
+    &-awards-list__title--box {
+      margin-top: 51px;
+    }
+
+    &-awards-list__title--oon {
+      width: 165px;
+    }
+
+    &-awards-list__subtitle {
+      @include text-style ($size: 11px, $weight: 400, $color: $text-color);
+    }
+
+    &-awards-list__subtitle--oon {
+      width: 180px;
+    }
+
+    &-awards-list__subtitle--stat, &-awards-list__subtitle--box {
+      width: 120px;
+    }
+
+      &-awards-list__go {
+      @include text-style ($size: 12px, $weight: 500, $color: $white);
+      width: 76px;
+      margin-bottom: 37px;
+    }
+
+    &-awards-list__recognized {
+      @include text-style ($size: 12px, $weight: 500, $color: $white);
+      width: 213px;
+      margin-bottom: 37px;
+    }
+
+    // section 10 - connect all the pictures to the list with pseudo-elements, 1440px
+    &-awards-list__oon:after {
+      @include sec10-after-before ($width: 77px, $height: 66px, $back-img: url('../img/sec10-1440-oon.png'), $top: 0, $right: 20px);
+      z-index: -1;
+    }
+
+    &-awards-list__stat:before {
+      @include sec10-after-before ($width: 37px, $height: 71px, $back-img: url('../img/sec10-1440-01.png'), $top: 20px, $right: 10px);
+      z-index: 1;
+    }
+
+    &-awards-list__stat:after {
+      @include sec10-after-before ($width: 39px, $height: 131px, $back-img: url('../img/sec10-1440-stat.png'), $top: 30px, $right: 30px);
+    }
+
+    &-awards-list__box2:after, &-awards-list__box3:after {
+      @include sec10-after-before ($width: 54px, $height: 105px, $back-img: url('../img/sec10-1440-box.png'), $top: 20px, $right: 25px);
+    }
+
+    &-awards-list__box2:before {
+      @include sec10-after-before ($width: 37px, $height: 73px, $back-img: url('../img/sec10-1440-02.png'), $top: 20px, $right: 10px);
+      z-index: 1;
+    }
+
+    &-awards-list__box3:before {
+      @include sec10-after-before ($width: 37px, $height: 73px, $back-img: url('../img/sec10-1440-03.png'), $top: 20px, $right: 10px);
+      z-index: 1;
+    }
+  }
+  // section10 - all ruls for 1440px
+}
+// section10 - all media-ruls for 1440px

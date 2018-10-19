@@ -1,0 +1,236 @@
+.section17 {
+    font-family: Acrom;
+    @extend %section-rules;
+    margin-top: 65px;
+    @media(min-width:$s9-screen-sm-min) {
+        margin-top: 95px;
+    }
+    @media(min-width:$s9-screen-md-min) {
+        margin-top: 90px;
+    }
+    
+    &__blue-block {
+        @media(max-width:$s9-screen-md-min) {
+            margin-left: auto;
+            margin-right: auto;  
+        }
+        box-shadow: 0px 17px 32px 0px rgba(0, 0, 0, 0.15);
+        width: 247px;
+        box-sizing: border-box;
+        background-color: #052139;
+        color:$white;
+        &-inner-wrap {
+            padding: 20%;
+            width: 59%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap; 
+        }
+
+        &-description {
+            font-size: 9px;
+            width: 42%;
+            font-weight: 500px;
+        }
+
+        &-price {
+            position: relative;
+            font-size: 9px;
+            text-transform: uppercase;
+            font-weight: 900;
+            align-self: center;
+            width: 35%;
+            text-align: right; 
+            &:before {
+                content:"";
+                height: 12%;
+                position: absolute;
+                width: 45%;
+                background-color: $grey;
+                transform: translate(-133%, 400%)
+            }
+        }
+        &-description-now {
+            font-size: 9px;
+            color: black;
+            margin-top: 15%;
+            width: 31%;
+            & > span {
+                display: block;
+                background-color: $mint;
+                margin-top:5%;
+                line-height: .8;
+            }
+            &-price {
+                width: 70%
+            }
+
+            &-price-s {
+                width: 96%;
+                @media (max-width:$s9-screen-sm-min - 1) {
+                    width: 100%;
+                }
+
+            }
+        }
+
+        &-price-now {
+            font-size: 25px;
+            font-weight: 900;
+            align-self: flex-end;
+            line-height: .8;
+            & > span {
+                font-size: 9px;
+                text-transform: uppercase;
+                font-weight: 900;
+            }
+        }
+        @include s17-blue-box-view($s9-screen-sm-min, 13px, 15px, 37px, 372px);
+        @include s17-blue-box-view($s9-screen-md-min, 9px, 10px, 26px);
+        @include s17-blue-box-view($s9-screen-lg-min, 11px, 13px, 33px);
+        @include s17-blue-box-view($s9-screen-xl-min, 10px, 11px, 30px);
+        @include s17-blue-box-view($s9-screen-xxl-min, 12px, 14px, 36px);
+    }
+
+    &__description {
+        @media(max-width:$s9-screen-md-min) {
+            margin-left: auto;
+            margin-right: auto;  
+        }
+        @media(max-width:$s9-screen-sm-min - 1) {
+            &-title {
+                transform: translateY(-1400%);
+                text-align: center;
+            }
+        }
+        &-title {
+            font-weight: 900;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+        width: 208px;
+        &-black {
+            font-size: 10px;
+            font-weight: bold;
+            margin-top: 10px;
+            line-height: 1.3;
+        }
+        &-grey {
+            font-size: 8px;
+            color: $dark-grey;
+            line-height: 1.5;
+            margin-top: 10px;
+            width: 75%;
+        }
+        &-orange {
+            font-weight: 500px;
+            color: $orange;
+            font-size: 10px;
+            margin-top: 15px;
+            line-height: 1.5;
+            &::before {
+                content: "";
+                position: absolute;
+                height: 1.5px;
+                width: 15px;
+                background: $black;
+                transform:  translate(-160%, 600%) rotate(-55deg);
+            }
+        }
+        &-buy-btn {
+            padding: 12px 33px;
+            border: none;
+            color: $white;
+            background: $orange;
+            text-transform: uppercase;
+            font-size: 7px;
+            font-weight: 900;
+            margin-top: 20px;
+            box-shadow: $s9-orange-btn-shadow;
+            cursor: pointer;
+        }
+    }
+
+    @media (min-width:$s9-screen-sm-min) {
+        &__description {
+            @media(max-width:$s9-screen-md-min - 1) {
+                &-title {
+                    transform: translateY(-1360%);
+                    text-align: center;
+                }
+            }
+            width: 300px;
+            &-title {
+                font-size: 18px;
+            }
+            &-black {
+                font-size: 14px;
+                margin-top: 15px;
+            }
+            &-grey {
+                font-size: 12px;
+                margin-top: 18px;
+            }
+
+            &-orange {
+                font-size: 14px;
+                margin-top: 20px;
+                &::before {
+                    width: 22px;
+                    height: 2.5px;
+                }
+            }
+            &-buy-btn {
+                font-size: 10px;
+                padding: 15px 50px;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    @media (min-width:$s9-screen-md-min) {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        &__blue-block {
+            margin-top: 3%;
+        }
+        &__description {
+            width: 40%;
+            &-title {
+                font-size: 27px;
+            }
+            &-inner-wrapper {
+                padding-left: 6%;
+            }
+            &-black {
+                font-size: 9px;
+                margin-top: 10%;
+                width: 75%;
+            }
+            &-grey {
+                font-size: 8px;
+                margin-top: 3%;
+                width: 65%;
+            }
+            &-orange {
+                font-size: 9px;
+                margin-top: 5%;
+                width: 63%;
+                &::before {
+                    width: 22px;
+                    height: 3px;
+                }
+                
+            }
+            &-buy-btn {
+                font-size: 7px;
+                padding: 4% 13%;
+                margin-top: 8%;
+            }
+        }
+    }
+    @include s17-description-block-view($s9-screen-lg-min, 33px, 11px);
+    @include s17-description-block-view($s9-screen-xl-min, 30px, 10px);
+    @include s17-description-block-view($s9-screen-xxl-min, 36px, 12px);
+}

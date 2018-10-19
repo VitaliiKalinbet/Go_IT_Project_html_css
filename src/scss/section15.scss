@@ -1,0 +1,642 @@
+//mobile first 320px
+.section15{
+    counter-reset: s9-item-number;
+@extend %section-rules;
+// SECTION COURSE 320px
+&__course{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 45px;
+    align-items: center;    
+        &-pct{
+           display: block;
+           width: 300px;
+           height: 110px;
+        } 
+
+        &-wr{
+            display: flex;
+            flex-direction: column;
+            align-items: center;             
+                
+                .section15__course-heding{
+                    @include text-style (12px,900,$black);
+                    text-transform: uppercase;
+                    font-family: Acrom;
+                }
+                .section15__course-text{
+                    padding-left: 20px;
+                    width: 155px;
+                    @include text-style (9px,600,$text-color);
+                    font-family: Acrom;
+                    margin-top: 20px;
+                    margin-bottom: 28px;
+                    position: relative;
+                 }
+                 .section15__course-text::before{
+                    @extend %black-line;
+                    left:0;
+                    top:5px;
+                }
+             }
+     }
+//  SECTIOM INFO 320px
+.section15__info{
+display: flex;
+flex-direction: column;
+padding:0 60px;
+.section15__info-content{
+margin-top: 19px;
+}
+.section15__content-title{
+    font-family: 'Acrom', sans-serif;
+    font-weight: 900;
+    font-size: 9px;
+    color: $white;
+    text-align: left;
+    background-color: $black;
+    text-transform: uppercase;
+    display: inline;
+}
+.section15__content-text{
+    font-family: 'Acrom', sans-serif;
+    font-weight: 400;
+    font-size: 9px;
+    color: $text-color;
+    text-align: left;
+    margin-top: 10px;
+}
+.sec15-trening{
+    width: 150px;
+}
+.sec15-instruction{
+    width: 180px;
+}
+.section15__info-pct{
+display: none;
+}
+}
+// SECTION ADVANTAGES 320px
+.section15__advantages{
+display: flex;
+align-items: center;
+flex-direction: column;
+&-heading{
+    @include text-style (9px,900,$black);
+    text-transform: uppercase;
+    font-family: Acrom;
+    width: 240px;
+    text-align: left;
+    margin-top: 30px;
+}
+&-list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 170px;
+}
+    &-item{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 170px;
+    }
+    
+    &-title{
+        @include text-style (9px,700,$black);
+        font-family: Acrom;
+        margin-top:22px;
+    }
+
+    &-title::before{
+        @extend %s9-orange-mark;
+        width: 36px;
+        height: 6px;
+        transform: rotate(270deg);
+        text-align: center;
+        top:40px;
+        left:-35px;
+    }
+    &-text{
+        @include text-style (9px,400,$text-color);
+        font-family: Acrom;
+        margin-top:5px;
+    }
+    .section15__price-item{
+        width: 200px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    .section15__item-wrapper{
+      width: 110px;
+      padding-top: 5px;
+        .section15__wrapper-title{
+            @include text-style (11px,500,$black);
+            background-color: $mint;
+            display:inline;
+        }
+    }
+    .section15__price{
+        width: 80px;
+    }
+    .section15__item-price{
+        font-family: Acrom;
+        text-transform: uppercase;
+    }
+    .sec15-before{
+        @include text-style (11px,900,$grey);
+    text-decoration: line-through;
+    }
+    .sec15-now{
+        padding-top: 5px;
+        @include text-style (14px,900,$black);
+        text-transform: lowercase;
+    }
+}
+@media (min-width: 480px) and (max-width:767px){
+// SECTION COURSE 480px
+.section15__course{
+margin-top: 70px;
+.section15__course-heding{
+    @include text-style (18px,900,$black);
+}
+.section15__course-text{
+    padding-left: 40px;
+    width: 220px;
+    @include text-style (14px,600,$black);
+    margin-top: 20px;
+    margin-bottom: 35px;
+ }
+.section15__course-pct{
+    display: block;
+    width: 450px;
+    height: 170px;
+}
+}
+// SECTION INFO 480px
+.section15__info{
+    margin: auto;
+        .section15__content-title{
+            margin-top: 30px;
+            font-size: 14px;
+        }
+        .section15__content-text{
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        .section15__info-content{
+            margin-top: 25px;
+        }
+        .sec15-trening{
+            width: 180px;
+        }
+        .sec15-instruction{
+            width: 210px;
+        }
+    } 
+// SECTION ADVANTAGES 480px
+.section15__advantages{
+.section15__advantages-heading{
+    width: 380px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+.section15__advantages-item{
+    width: 250px;
+}
+.section15__advantages-title{
+    margin-top:30px;
+    font-size: 14px;
+}
+.section15__advantages-title::before{
+    width:52px;
+    height:11px;
+    top:60px;
+    left:-45px;
+}
+.section15__advantages-text{
+    margin-top:10px;
+    font-size: 14px;
+}
+.section15__price-item{
+        width: 300px;
+        margin-top: 60px;
+    }
+    .section15__item-wrapper{
+      width: 150px;
+      padding-top: 5px;
+        .section15__wrapper-title{
+            @include text-style (17px,500,$black);
+            line-height: 1.5;
+        }
+    }
+    .section15__price{
+        width: 120px;
+    }
+    .sec15-before{
+        @include text-style (17px,900,$grey);
+    }
+    .sec15-now{
+        @include text-style (17px,900,$black);
+    }
+  }
+}
+@media (min-width: 768px){
+// SECTION COURSE 768px
+.section15__course{
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:100px;
+    align-items: flex-start;
+}
+.section15__course-pct{
+    width: 275px;
+    height: 170px;
+ } 
+ .section15__course-wr{
+    width: 50%;
+    align-items: start;
+ }   
+ .section15__course-heding{
+    @include text-style (27px,900,$black);
+    width: 220px;
+    margin-top: 30px;
+ }
+ .section15__course-text{
+    font-family: Acrom;
+    margin-top: 25px;
+    margin-bottom: 0;
+    @include text-style (9px,600,$black);
+    padding-left: 50px;
+ }
+ .section15__course-text::before{   
+    left:0px;
+    top:10px;
+}
+// SECTION INFO 768px
+.section15__info{
+    display: flex;
+    flex-direction: row;
+    padding-left: 0px;
+    margin-top: 50px;
+    align-items: center;
+.info-cont-wr{
+    width: 50%;
+}
+.section15__info-content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 0;
+}
+.section15__info-content:nth-child(2){
+    margin-top:30px;
+}
+.section15__content-title{
+    margin-top: 0;
+    margin-right: 25px;
+    
+}
+.section15__content-text{
+   width: 160px;
+   margin-top: 3px;
+}
+.sec15-trening, .sec15-instruction{
+    width: 130px;
+}
+.section15__info-pct {
+    display: block;
+    width: 220px;
+    height: 200px;
+    margin-left: 85px;
+}
+}
+// SECTION ADVANTAGES 768px
+.section15__advantages{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    justify-content: space-between;
+    margin-top: 55px;
+}
+.section15__advantages-heading{
+    width: 100px;
+    margin: 0;
+    padding: 0;
+}
+.section15__advantages-list{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: flex-start;
+    .section15__price-item{
+        width: 180px;
+        margin-top:0px; 
+    }
+    .section15__item-wrapper{
+        width:80px;
+    }
+    .sec15-before{
+        font-size:8px;
+    }
+    .sec15-now{
+        padding-top: 8px;
+        font-size:17px;
+    }
+
+.section15__item-wrapper{
+.section15__wrapper-title{
+    @include text-style (8px,500,$black);
+}
+}
+}  
+.section15__advantages-item:not(:nth-child(5)){
+    width: 140px;
+}
+.sec15-ad-item{
+    width: 100px;
+}
+.section15__advantages-item:not(:nth-child(3n)){
+    margin-right: 30px
+}
+.section15__advantages-item:nth-child(-n+3){
+    margin-bottom: 20px;
+}
+.section15__advantages-title{
+    margin-top: 0;
+}
+.section15__advantages-title::before{
+width: 25px;
+height: 7px;
+top:10px;
+left:-25px;
+font-size: 6px;
+}
+} 
+@media (min-width: 960px){
+  // SECTION COURSE  960px
+  .section15__course{
+    margin-top:120px;
+}
+.section15__course-pct{
+    width: 350px;
+    height: 210px;
+ } 
+ .section15__course-wr{
+    width: 50%;
+ }   
+ .section15__course-heding{
+    @include text-style (34px,900,$black);
+    width: 280px;
+ }
+ .section15__course-text{
+    margin-top: 40px;
+    padding-left: 50px;
+    @include text-style (12px,600,$black);
+ }
+ // SECTION INFO 960px
+ .section15__info{
+    margin-top: 60px;
+.section15__info-content:nth-child(2){
+        margin-top:35px;
+}
+.section15__content-title{
+font-size: 12px;
+}
+.section15__content-text{
+   margin-left: 30px;
+   width: 200px;
+   font-size: 10px;
+}
+.section15__info-pct {
+    width: 285px;
+    height: 260px;
+    margin-left: 100px;
+}
+}
+// SECTION ADVANTAGES 960px
+.section15__advantages{
+margin-top: 70px;
+}
+.section15__advantages-heading{
+width: 140px;
+font-size: 12px;
+}
+.section15__advantages-list{
+width: 550px;
+
+.section15__item-wrapper{
+    width:90px;
+}
+.section15__price{
+   width:95px;  
+}
+.sec15-before{
+    font-size:10px;
+}
+.sec15-now{
+    font-size:21px;
+}
+.section15__item-wrapper{
+.section15__wrapper-title{
+    @include text-style (10px,500,$black);
+}
+}
+.section15__price-item{
+    width: 200px; 
+}
+.section15__advantages-title{
+margin-top: 0;
+font-size: 12px;
+}
+.section15__advantages-text{
+font-size: 10px;
+}
+.section15__advantages-item:nth-child(-n+3){
+    margin-bottom: 40px;
+}
+.section15__advantages-item:not(:nth-child(3n)){
+    margin-right: 40px;
+}
+.section15__advantages-title::before{
+width: 30px;
+height: 8px;
+top:10px;
+left:-25px;
+font-size: 8px;
+  }
+}
+}
+@media (min-width: 1200px){
+.section15__course{
+margin-top:120px;
+}
+.section15__course-pct{
+width: 305px;
+height: 185px;
+} 
+.section15__course-wr{
+width: 50%;
+}   
+.section15__course-heding{
+@include text-style (30px,900,$black);
+width: 240px;
+}
+.section15__course-text{
+margin-top: 30px;
+padding-left: 50px;
+@include text-style (10px,600,$black);
+}
+// SECTION INFO 1200px
+.section15__info{
+margin-top: 50px;
+.section15__info-content:nth-child(2){
+    margin-top:30px;
+}
+.section15__content-title{
+font-size: 10px;
+width: 105px;
+}
+.section15__content-text{
+margin-left: 30px;
+width: 180px;
+font-size: 9px;
+}
+.section15__info-pct {
+width: 250px;
+height: 225px;
+margin-left: 90px;
+}
+}
+// SECTION ADVANTAGES 1200px
+.section15__advantages{
+margin-top: 60px;
+}
+.section15__advantages-heading{
+width: 120px;
+font-size: 10px;
+}
+.section15__advantages-list{
+    width: 550px;
+.sec15-before{
+    font-size:9px;
+}
+.sec15-now{
+    font-size:19px;
+}
+.section15__item-wrapper{
+.section15__wrapper-title{
+    @include text-style (9px,500,$black);
+}
+}
+.section15__price-item{
+    width: 200px; 
+}
+.section15__advantages-title{
+font-size: 10px;
+}
+.section15__advantages-text{
+font-size: 9px;
+}
+.section15__advantages-item:nth-child(-n+3){
+    margin-bottom: 35px;
+}
+.section15__advantages-item:not(:nth-child(3n)){
+    margin-right: 50px
+}
+.section15__advantages-title::before{
+width: 28px;
+height: 7px;
+top:10px;
+left:-25px;
+font-size: 7px;
+  }
+}
+}
+@media (min-width: 1440px){
+    // SECTION COURSE  1440px
+    .section15__course{
+      margin-top:150px;
+  }
+  .section15__course-pct{
+      width: 370px;
+      height: 210px;
+   } 
+   .section15__course-heding{
+      @include text-style (36px,900,$black);
+      width: 300px;
+   }
+   .section15__course-text{
+      margin-top: 40px;
+      padding-left: 50px;
+      @include text-style (12px,600,$black);
+   }
+   // SECTION INFO 1440px
+   .section15__info{
+      margin-top: 65px;
+  .section15__info-content:nth-child(2){
+          margin-top:34px;
+  }
+  .section15__content-title{
+  font-size: 12px;
+  }
+  .section15__content-text{
+     margin-left: 30px;
+     width: 210px;
+     font-size: 11px;
+  }
+  .section15__info-pct {
+      width: 300px;
+      height: 270px;
+      margin-left: 110px;
+  }
+}
+ // SECTION ADVANTAGES 1440px
+ .section15__advantages{
+  margin-top: 80px;
+  }
+ .section15__advantages-heading{
+  width: 140px;
+  font-size: 12px;
+  }
+
+  .section15__advantages-list{
+  width: 600px;
+ 
+  .sec15-before{
+      font-size:11px;
+  }
+  .sec15-now{
+      font-size:21px;
+  }
+  .section15__item-wrapper{
+  .section15__wrapper-title{
+      @include text-style (11px,500,$black);
+  }
+  }
+  .section15__advantages-title{
+  font-size: 12px;
+  }
+  .section15__advantages-text{
+      width: 150px;
+  font-size: 11px;
+  }
+  .section15__advantages-item:nth-child(-n+3){
+      margin-bottom: 45px;
+  }
+  .section15__advantages-item:not(:nth-child(3n)){
+    margin-right: 70px
+}
+  .section15__advantages-title::before{
+  width: 30px;
+  height: 10px;
+  top:10px;
+  left:-25px;
+    }
+  }
+}
+}

@@ -1,0 +1,291 @@
+.section02 {
+    @extend %section-rules;
+        @media (min-width: 768px) {
+            display:flex;
+            margin: 56px auto auto;
+        }
+
+            @media (min-width: 960px) {
+                margin:70px auto auto;
+            }
+            @media (min-width: 1200px) {
+                margin:121px auto auto;
+            }
+            @media (min-width: 1440px) {
+                margin:145px auto auto;
+            }
+}
+
+.sec02-title-wrapper {
+    margin:52px auto 28px;
+    width:220px;
+    @media (min-width: 480px) {
+        width: 286px;  
+        margin:78px auto 43px;   
+    }
+    @media (min-width: 768px) {
+        width: 180px;
+        margin:0 auto;
+        
+    }
+    @media (min-width: 960px) {
+        width: 223px;
+        
+    }
+    @media (min-width: 1200px) {
+        width:200px;
+       
+    }
+    @media (min-width: 1440px) {
+        width:239px;
+       
+    }
+}
+
+
+.sec02-title {
+    margin-bottom: 28px;
+    text-align:center;
+    @include text-style (12px, 900, $black);
+    text-transform: uppercase;
+        @media (min-width: 480px) {
+            @include text-style (18px, 900, $black);
+            margin-bottom: 42px;  
+        }
+        @media (min-width: 768px) {
+            @include text-style (26px, 900, $black);
+            text-align:left;
+            margin-bottom: 24px;
+            width:180px; 
+        }
+        @media (min-width: 960px) {
+            @include text-style (33px, 900, $black); 
+            width:223px;
+        }
+        @media (min-width: 1200px) {
+            @include text-style (29px, 900, $black);
+            margin-bottom: 24px; 
+            width:200px;
+        }
+        @media (min-width: 1440px) {
+            @include text-style (35px, 900, $black);
+            margin-bottom: 33px; 
+            width:239px;
+        }
+}
+
+.sec02-introdaction {
+    padding-left: 26px;
+    @include text-style (9px, 500);
+    position: relative;
+    &::before {
+        @extend %black-line;
+        top: 6px;
+        left: 0;
+    }
+    @media (min-width: 480px) {
+        @include text-style (13.5px, 500);
+    }
+    @media (min-width: 768px) {
+        @include text-style (9px, 500);
+        
+               padding-left: 55px;
+    }
+    @media (min-width: 960px) {
+        @include text-style (11.22px, 500);
+    }
+    @media (min-width: 1200px) {
+        @include text-style (10px, 500);
+    }
+    @media (min-width: 1440px) {
+        @include text-style (12px, 500);  
+    }
+}
+
+
+.sec02-ul {
+    margin: auto;
+    width: 252px;
+    @media (min-width: 480px) {
+        width: 378px;
+    }
+    @media (min-width: 768px) {
+            width:460px;
+            display:flex;
+            flex-wrap: wrap;
+        }     
+        @media (min-width: 960px) {
+            width:577px;
+        }  
+    @media (min-width: 1200px) {
+        width:515px;
+    }
+    @media (min-width: 1440px) {
+        width:621px;
+    }
+}
+
+.sec02-text {
+    margin-left: 14px;
+    width:246px;
+    @media (min-width: 768px) {
+        margin-left:38px;
+        width:155px;
+    }
+    @media (min-width: 960px) {
+        margin-left:49px;
+        width:186px;
+    }
+    @media (min-width: 1200px) {
+        margin-left:42px;
+        width:166px;
+    }
+    @media (min-width: 1440px) {
+        margin-left:51px;
+        width:199px;
+    }
+
+
+        &__fact {
+            @include text-style (16px, 900);
+            position: relative;
+            margin-bottom: 10px;
+            @media (min-width: 768px) {
+                @include text-style (13px, 900);
+                margin:auto;
+                margin-bottom: 10px;
+            }
+            @media (min-width: 960px) {
+                @include text-style (21px, 900);
+            }
+            @media (min-width: 1200px) {
+                @include text-style (19px, 900);
+            }
+            @media (min-width: 1440px) {
+                @include text-style (22.5px, 900);
+            }
+          
+        }
+
+        &__fact--margin {
+            margin-top: 19px;  
+            @media (min-width: 768px) {
+                margin-top:0px;
+            }
+        } 
+
+        &__fact::before {
+            display: block;
+            content: "";
+            width: 8px;
+            height: 7px;
+            background-color: $orange;
+            position: absolute;
+            top:6px;
+            left: -13px;
+            @media (min-width: 768px) {
+                display: none;
+                }
+            }
+
+        &__addfact {
+            display: inline;
+                @include text-style (8.9px, 500);
+                background-color: $mint;
+                @media (min-width: 480px) {
+                    @include text-style (13.5px, 500);
+                }
+                @media (min-width: 768px) {
+                    @include text-style (10px, 500);
+                    width: 150px;
+                }
+                @media (min-width: 960px) {
+                    width: 186px;
+                }
+                @media (min-width: 1200px) {
+                    @include text-style (8.75px, 500);
+                }
+                @media (min-width: 1440px) {
+                    @include text-style (10.5px, 500);
+                }
+              }
+        &__descr {
+            @include text-style (9px, 400);
+             margin: 12px auto 19px;
+             @media (min-width: 480px) {
+                @include text-style (13.5px, 400);
+             }
+             @media (min-width: 768px) {
+                margin: 11px auto 21px;
+                @include text-style (10px, 400);
+             }
+             @media (min-width: 1200px) {
+                margin: 12px auto 24px;
+                @include text-style (8.75px, 400);
+             }
+             @media (min-width: 1440px) {
+                margin: 14px auto 27px;
+                @include text-style (10.5px, 400);
+             }
+
+
+        }    
+}
+
+@media (min-width: 480px) {
+    .sec02-text {
+        width: 377px;
+    margin-left: 19px;
+    
+      &__fact {
+               @include text-style (24px, 900);
+                margin-bottom: 16px;}
+   
+
+      &__fact--margin {
+            margin-top: 30px;
+             }    
+      &__fact::before {
+            width: 10px;
+            height: 10px;
+            left: -24px;
+         }
+
+  }
+}
+
+@media (min-width: 768px) {
+    .sec02-ul__text--order0 {
+        order:-1;
+    }
+    .sec02-ul-wrapper{
+        position: relative;
+    }
+    .sec02-ul-wrapper::after{
+        display:block;
+        content: "";
+        background-image: url(../img/sec02-schedule-768@1x.png);
+        width: 215px;
+        height: 110px;
+        position: absolute;
+        bottom: -5px;
+        right: 0px;
+        z-index: -1;
+
+        @media (min-width: 960px){
+            background-image: url(../img/sec02-schedule-960@1x.png);
+            width: 282px;
+            height: 137px;
+        }
+        @media (min-width: 1200px){
+            background-image: url(../img/sec02-schedule-1200@1x.png);
+            width: 238px;
+            height: 121px;
+        }
+        @media (min-width: 1440px){
+            background-image: url(../img/sec02-schedule-1440@1x.png);
+            width: 291px;
+            height: 146px;
+        }
+    }
+}

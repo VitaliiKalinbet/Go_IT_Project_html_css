@@ -1,0 +1,413 @@
+.section18{
+  margin-top: 64px ;
+  @extend %section-rules ;
+  position: relative;
+  @media (min-width: 768px) and (max-width:959px){
+    display: flex;
+    justify-content: space-between;
+    margin-top: 81px ;
+  }
+  @media (min-width: 960px) and (max-width:1199px) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 141px ;
+  }
+  @media (min-width: 1200px) and (max-width:1439px){
+    display: flex;
+    justify-content: space-between;
+    margin-top: 137px ;
+  }
+  @media (min-width: 1440px){
+    display: flex;
+    justify-content: space-between;
+    margin-top: 137px ;
+  }
+  
+
+  &::before{
+    display: block;
+    content: "";
+    position: absolute;
+    background-image: url(../img/section18-320.png);
+    background-repeat: no-repeat;
+    width: 49px;
+    height: 101px;
+    left: 26px;
+    @media (min-width: 480px) and (max-width:767px){
+      left: 35px;
+      background-image: url(../img/section18-480.png);
+      width: 73px;
+      height: 150px;
+    }
+    @media (min-width: 768px) and (max-width:959px){
+      left: 201px;
+      background-image: url(../img/section18-768.png);
+      width: 104px;
+      height: 215px;
+      z-index: -1;
+    }
+    @media (min-width: 960px) and (max-width:1199px){
+      width: 215px;
+      height: 269px;
+      z-index: -1;
+      left: 256px;
+      background-image: url(../img/section18-960.png);
+    }
+    @media (min-width: 1200px) and (max-width:1439px){
+      width: 117px;
+      height: 241px;
+      z-index: -1;
+      left: 225px;
+      background-image: url(../img/section18-1200.png);
+    }
+    @media (min-width: 1440px){
+      width: 140px;
+      height: 289px;
+      z-index: -1;
+      left: 265px;
+      background-image: url(../img/section18-1440.png);
+    }
+    
+    
+  }
+
+  &-firstcolumn{
+    width: 125px;
+    margin: 0 auto 15px;
+    @media (min-width: 480px) and (max-width:767px){
+      width: 187px;
+    }
+    @media (min-width: 768px) and (max-width:959px){
+      width: 278px;
+    }
+    @media (min-width: 960px) and (max-width:1199px){
+      width: 348px; 
+
+    }
+    @media (min-width: 1200px) and (max-width:1439px){
+      width: 310px;
+    }
+    @media (min-width: 1440px){
+      width: 379px;
+    }
+
+    &__title{
+      @include text-style ($size: 12px, $weight: 900, $color: $black);
+      text-transform: uppercase;
+      @media (min-width: 480px) and (max-width:767px){
+        font-size: 18px;
+      }
+      @media (min-width: 768px) and (max-width:959px){
+        font-size: 27px;
+      }
+      @media (min-width: 960px) and (max-width:1199px){
+        font-size: 34px
+
+      }
+      @media (min-width: 1200px) and (max-width:1439px){
+        font-size: 30px;
+      }
+      @media (min-width: 1440px){
+        font-size: 36px;
+      }
+    }
+  
+    &__subtitle{
+      @include text-style ($size: 9px, $weight: 400, $color: $text-color);
+      position: relative;
+      margin-top: 12px;
+      // margin-left: 3%;
+      width: 100%;
+      @media (min-width: 480px) and (max-width:767px){
+        margin-top: 18px;
+        font-size: 14px;
+        // margin-left: 7%;
+        width: 105%;
+      }
+      @media (min-width: 768px) and (max-width:959px){
+        font-size: 9px;
+        margin-top: 24px;
+        margin-left: 16%;
+        width: 70%;
+      }
+      @media (min-width: 960px) and (max-width:1199px){
+        font-size: 11px;
+        margin-top: 30px;
+        margin-left: 16%;
+        width: 70%;
+      }
+      @media (min-width: 1200px) and (max-width:1439px){
+        font-size: 10px;
+        margin-top: 28px;
+        margin-left: 16%;
+        width: 70%;
+      }
+      @media (min-width: 1440px){
+        font-size: 12px;
+        margin-top: 32px;
+        margin-left: 16%;
+        width: 70%;
+      }
+
+      &:before{
+        content: "";
+        display: block;
+        background: $text-color;
+        width: 9px;
+        height: 2px;
+        position: absolute;
+        top: 20%;
+        transform: translate(-150%,50%);
+        @media (min-width: 480px) and (max-width:767px){
+          width: 14px;
+          height: 4px;
+          top: 13%;
+        }
+        @media (min-width: 768px) and (max-width:959px){
+          width: 29px;
+          height: 5px; 
+          top: 10%;
+        }
+        @media (min-width: 960px) and (max-width:1199px){
+          width: 39px;
+          height: 5px; 
+          top: 10%;
+        }
+        @media (min-width: 1200px) and (max-width:1439px){
+          width: 32px;
+          height: 5px;
+          top: 10%;
+        }
+        @media (min-width: 1440px){
+          width: 38px;
+          height: 5px;
+          top: 10%;
+        }
+        
+      }
+    }
+
+    &__button{
+      background: $orange;
+      @include text-style ($size: 7px, $weight: 900, $color: $white);
+      text-transform: uppercase;
+      padding: 11px 27px;
+      width: 145px;
+      margin: 15px -12% 15px;
+      border: none;
+      
+      @media (min-width: 480px) and (max-width:767px){
+        font-size: 10px;
+        width: 218px;
+        padding: 16px 40px;
+      }
+      @media (min-width: 768px) and (max-width:959px){
+        margin: 30px 44px 0;
+      }
+      @media (min-width: 960px) and (max-width:1199px){
+        margin: 30px 55px 0;
+        width: 183px;
+        padding: 14px 34px;
+        font-size: 8px;
+      }
+      @media (min-width: 1200px) and (max-width:1439px){
+        margin: 33px 50px 0;
+        width: 164px;
+        padding: 13px 30px;
+        font-size: 7.5px;
+      }
+      @media (min-width: 1440px){
+        margin: 40px 60px 0;
+        width: 196px;
+        padding: 15px 36px;
+        font-size: 9px;
+      }
+    }
+  }
+  
+  &-secondcolumn{
+    width: 193px;
+    margin: 0 auto 15px;
+    @media (min-width: 480px) and (max-width:767px){
+      width: 288px;
+    }
+    @media (min-width: 768px) and (max-width:959px){
+      width: 310px;
+      display: flex;
+      justify-content: space-between;   
+      flex-wrap: wrap;
+    }
+    @media (min-width: 960px) and (max-width:1199px){
+      width: 388px;
+      display: flex;
+      justify-content: space-between;   
+      flex-wrap: wrap;
+    }
+    @media (min-width: 1200px) and (max-width:1439px){
+      width: 346px;
+      display: flex;
+      justify-content: space-between;   
+      flex-wrap: wrap;
+    }
+    @media (min-width: 1440px){
+      width: 415px;
+      display: flex;
+      justify-content: space-between;   
+      flex-wrap: wrap;
+    }
+
+    
+
+
+    &__title{
+      @include text-style ($size: 13px, $weight: 900,$color: $dark-grey);
+      @media (min-width: 480px) and (max-width:767px){
+        font-size: 20px;
+      }
+      @media (min-width: 768px) and (max-width:959px){
+        font-size: 17px;
+      }
+      @media (min-width: 960px) and (max-width:1199px){
+        font-size: 21px;
+      }
+      @media (min-width: 1200px) and (max-width:1439px){
+        font-size: 19px;
+      }
+      @media (min-width: 1440px){
+        font-size: 26px;
+      }
+    }
+      
+    &__firstparag{
+      @include text-style ($size: 9px, $weight: 700,$color: $dark-grey);
+      @media (min-width: 480px) and (max-width:767px){
+        font-size: 14px;
+      }
+      @media (min-width: 768px) and (max-width:959px){
+        width: 227px;
+        font-size: 9px;
+      }
+      @media (min-width: 960px) and (max-width:1199px){
+        width: 283px;
+        font-size: 11px;
+        
+      }
+      @media (min-width: 1200px) and (max-width:1439px){
+        font-size: 10px;
+      }
+      @media (min-width: 1440px){
+        font-size: 12px;
+      }
+    }
+      
+    &__secondparag{
+      @include text-style ($size: 9px, $weight: 400,$color: $dark-grey);
+      margin-top: 19px;
+      @media (min-width: 480px) and (max-width:767px){
+        font-size: 14px;
+        margin-top: 30px;
+      }      
+      @media (min-width: 768px) and (max-width:959px){
+        width: 201px;
+        font-size: 9px;
+        margin-top: 15px;
+        
+      }
+      @media (min-width: 960px) and (max-width:1199px){
+        font-size: 11px;
+      }
+      @media (min-width: 1200px) and (max-width:1439px){
+        font-size: 9px;
+      }
+      @media (min-width: 1440px){
+        font-size: 11px;
+
+      }
+    }
+      
+    &__thirthparag{
+      @include text-style ($size: 9px, $weight: 400,$color: $dark-grey);
+      margin-top: 18px;
+
+      @media (min-width: 480px) and (max-width:767px){
+        font-size: 14px;
+        margin-top: 30px;
+      }
+       
+      @media (min-width: 768px) and (max-width:959px){
+        width: 208px;
+        font-size: 9px;
+        margin-top: 25px;
+      }
+      @media (min-width: 960px) and (max-width:1199px){
+        font-size: 11px;
+      }
+
+      @media (min-width: 1200px) and (max-width:1439px){
+        font-size: 10px;
+      }
+      @media (min-width: 1440px)
+      {
+        font-size: 12px;
+      }
+
+      &--str{
+        @include text-style ($size: 9px, $weight: 900,$color: $dark-grey);
+        @media (min-width: 480px) and (max-width:767px){
+          font-size: 14px;
+        }
+        @media (min-width: 768px) and (max-width:959px){
+          
+          font-size: 9px;
+        }
+        @media (min-width: 960px) and (max-width:1199px){
+          font-size: 11px;
+        }
+  
+        @media (min-width: 1200px) and (max-width:1439px){
+          font-size: 10px;
+        }
+        @media (min-width: 1440px)
+        {
+          font-size: 12px;
+        }
+      }
+    }
+    
+    &__button{
+      @include text-style ($size: 9px, $weight: 500,$color: $orange);
+      margin-top: 18px;
+      text-align: right;
+      @media (min-width: 480px) and (max-width:767px){
+        font-size: 14px;
+        margin-top: 30px;
+      }
+      @media (min-width: 768px) and (max-width:959px){
+        margin-top: 25px;
+        font-size: 9px;
+      }
+      @media (min-width: 960px) and (max-width:1199px){
+        font-size: 11px;
+        margin-top: 35px;
+      }
+      @media (min-width: 1200px) and (max-width:1439px){
+        font-size: 10px;
+      }
+      @media (min-width: 1440px){
+        font-size: 14px;
+      }
+    }
+  } 
+
+  &-secondcolumn2{
+    @media (min-width: 960px) and (max-width:1199px){
+      width: 283px;
+    }
+    @media (min-width: 1200px) and (max-width:1439px){
+      width: 252px;
+    }
+    @media (min-width: 1440px){
+      width: 302px;
+    }
+  }
+}

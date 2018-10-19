@@ -1,0 +1,98 @@
+%section-rules {
+  margin: auto;
+  width: 300px; 
+  padding: 0 10px;
+
+    @media (min-width: 480px) and (max-width:767px) {
+        width: 450px;
+        padding: 0;
+    }
+
+    @media (min-width: 768px) and (max-width:959px) {
+      width: 640px;
+      padding: 0;
+    }
+
+    @media (min-width: 960px) and (max-width:1199px) {
+        width: 800px;
+        padding: 0;
+    }
+
+    @media (min-width: 1200px) and (max-width:1439px) {
+        width: 715px;
+        padding: 0;
+    }
+
+    @media (min-width: 1440px) {
+        width: 860px;
+        padding: 0;
+    }
+}
+
+%section-title-white_bg {
+    font-family: 'Acrom', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    color: $black;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+%section-title-black_bg {
+    font-family: 'Acrom', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    color: $white;
+    text-align: left;
+    background-color: $black;
+    text-transform: uppercase;
+}
+
+%black-line {
+  display: block;
+  content: "";
+  width: 14px;
+  height: 2px;
+  background-color: $black;
+  position: absolute;
+
+  @media (min-width: 480px) and (max-width:767px) {
+    width: 20px;
+    height: 4px;
+  }
+
+    @media (min-width: 1200px) and (max-width:1439px) {
+        width: 32px;
+        height: 4px;
+    }
+
+    @media (min-width: 1440px) {
+        width: 38px;
+        height: 5px;
+    } 
+}
+
+    %s9-orange-mark {
+      counter-increment: s9-item-number 1;
+      content: "[\a0 00" counter(s9-item-number) " \a0]";
+      background: $orange;
+      color: $white;
+      position: absolute;
+      font-size: 9px;
+      font-weight: bold;
+      line-height: 0.9;
+    }
+
+    %s9-slank-mark {
+        content: "";
+        position: absolute;
+        height: 1.5px;
+        width: 15px;
+        background: $black;
+        transform:  translate(-160%, 600%) rotate(-55deg);
+    }
+
+    %span {
+        display: block;
+        background-color: $black;
+    }

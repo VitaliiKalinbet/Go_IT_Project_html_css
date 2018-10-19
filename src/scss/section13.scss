@@ -1,0 +1,392 @@
+// ______\m/______TOP_______\m/________\\
+
+.section13 {
+  min-width: 320px;
+  font-family: Acrom;
+  @extend %section-rules;
+  margin-top: 10px;
+
+    @media (min-width: 480px) {
+      margin-top: 18px;
+    }
+    @media (min-width: 768px) {
+      margin-top: 38px;
+    }
+    @media (min-width: 960px) {
+      margin-top: 49px;
+    }
+    @media (min-width: 1200px) {
+      margin-top: 64px;
+    }
+    @media (min-width: 1440px) {
+      margin-top: 76px;
+    }
+  
+  &__photo {
+    display: block;
+    width: 60%;
+    margin: auto;
+    background: url(../img/sec13_fon_320px@1X.png) no-repeat;
+    background-position: 65% 0;
+  }
+  @media (-webkit-min-device-pixel-ratio: 2) {
+    &__photo {
+      background: url(../img/sec13_fon_320px@2X.png) no-repeat;
+      background-position: 100% 0;
+    }
+  }
+  &__pretitle {
+    position: relative;
+    margin: auto;
+    width: 75%;
+    color: $orange;
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 30px;
+    &::before {
+      @extend %s9-slank-mark;
+      width: 11px;
+      transform:  translate(-160%, 600%) rotate(-55deg);
+    }
+  }
+  &__title {
+    @extend %section-title-black_bg;
+    display: inline;
+    line-height: 1.5;
+    font-size: 12px;
+    margin-left: 18%;
+    width: 57%;
+    padding: 0 8px;
+    margin-top: 15px;
+  }
+  &__subtitle {
+    position: relative;
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-left: 27%;
+    padding-top: 18px;
+    width: 52%;
+    
+    &::before {
+      @extend %black-line;
+      left: -23px;
+      top: 24px;
+    }
+  }
+  
+  @media (min-width: $s9-screen-sm-min) {
+    &__photo {
+      width: 55%;
+      background: url(../img/sec13_fon_480px@1X.png) no-repeat;
+      background-position: 100% 0;
+    }
+    @media (-webkit-min-device-pixel-ratio: 2) {
+      &__photo {
+        background: url(../img/sec13_fon_480px@2X.png) no-repeat;
+        background-position: 100% 0;
+      }
+    }
+    &__pretitle {
+      font-size: 13px;
+      margin-bottom: 20px;
+      margin-left: 14%;
+      &::before {
+        width: 16px;
+        transform:  translate(-160%, 600%) rotate(-55deg);
+      }
+    }
+    &__title {
+      font-size: 18px;
+      width: 61%;
+      margin-left: 16%;
+    }
+    &__subtitle {
+      font-size: 13px;
+      width: 58%;
+      margin-left: 23.5%;
+      
+      &::before {
+        top: 26px;
+        left: -33px;
+      }
+    }
+  }
+
+  @media (min-width: $s9-screen-md-min) {
+    &-top {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__photo {
+      width: 35%;
+      background: url(../img/sec13_fon_768px@1X.png) no-repeat;
+      background-position: 100% 0;
+    }
+    @media (-webkit-min-device-pixel-ratio: 2) {
+      &__photo {
+        background: url(../img/sec13_fon_768px@2X.png) no-repeat;
+        background-position: 100% 0;
+      }
+    }
+    &__inner-top-title {
+      flex-wrap: wrap;
+      width: 50%;
+    }
+    &__pretitle {
+      font-size: 9px;
+      width: 40%;
+      margin: 0 0 3% 10%;
+      &::before {
+        width: 21px;
+        height: 2px;
+        transform:  translate(-160%, 600%) rotate(-55deg);
+      }
+    }
+    &__title {
+      font-size: 27px;
+      width: 84%;
+      margin: 0;
+      padding: 0;
+    }
+    &__subtitle {
+      font-size: 9px;
+      width: 52%;
+      margin-left: 20%;
+
+      &::before {
+        top: 22px;
+        left: -62px;
+      }
+    }
+  }
+  @media (min-width: $s9-screen-lg-min) {
+    &__photo {
+      width: 36%;
+      margin-left: 7%;
+      background: url(../img/sec13_fon_960px@1X.png) no-repeat;
+      background-position: 100% 0;
+    }
+    @media (-webkit-min-device-pixel-ratio: 2) {
+      &__photo {
+        background: url(../img/sec13_fon_960px@2X.png) no-repeat;
+        background-position: 100% 0;
+      }
+    }
+    &__inner-top-title {
+      width: 47%;
+    }
+    &__pretitle {
+      font-size: 11px;
+      width: 45%;
+      margin: 0 0 5% 11%;
+      &::before {
+        width: 27px;
+        height: 2px;
+        transform:  translate(-160%, 600%) rotate(-55deg);
+      }
+    }
+    &__title {
+      font-size: 33px;
+    }
+    &__subtitle {
+      font-size: 11px;
+      margin-left: 17%;
+      margin-top: 23px;
+    }
+  }
+  @media (min-width: $s9-screen-xl-min) {
+    &__photo {
+      background: url(../img/sec13_fon_1200px@1X.png) no-repeat;
+      background-position: 100% 0;
+    }
+    @media (-webkit-min-device-pixel-ratio: 2) {
+      &__photo {
+        background: url(../img/sec13_fon_1200px@2X.png) no-repeat;
+        background-position: 100% 0;
+      }
+    }
+    &__pretitle, &__subtitle {
+      font-size: 10px;
+    }
+    &__pretitle {
+      &::before {
+        width: 25px;
+        height: 2px;
+        transform:  translate(-160%, 600%) rotate(-55deg);
+      }
+    }
+    &__title {
+      font-size: 30px;
+      width: 84%;
+    }
+    &__subtitle {
+      margin: 15px 0 0 18%;
+    }
+  }
+  @media (min-width: $s9-screen-xxl-min) {
+    &__photo {
+      background: url(../img/sec13_fon_1440px@1X.png) no-repeat;
+      background-position: 100% 0;
+    }
+    @media (-webkit-min-device-pixel-ratio: 2) {
+      &__photo {
+        background: url(../img/sec13_fon_1440px@2X.png) no-repeat;
+        background-position: 100% 0;
+      }
+    }
+    &__pretitle, &__subtitle {
+      font-size: 12px;
+    }
+    &__pretitle {
+      &::before {
+        width: 29px;
+        height: 3px;
+        transform:  translate(-160%, 600%) rotate(-55deg);
+      }
+    }
+    &__title {
+      font-size: 36px;
+      width: 84%;
+    }
+    &__subtitle {
+      margin-left: 16%;
+    }
+  }
+}
+
+// ______\m/______BOTTOM_______\m/________\\
+
+.section13 {
+  counter-reset: s9-item-number 0;
+
+  &__description {
+    margin: 38px auto 10px;
+    width: 83%;
+    line-height: 1.8;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+  &__list-item {
+    box-sizing: border-box;
+    width: 70%;
+    @media(max-width: $s9-screen-md-min - 1) {
+      padding-left: 18px;
+      margin: 20px auto 0;
+    }
+
+    &::before {
+      @extend %s9-orange-mark;
+      transform: rotate(270deg) translate(-40%, -420%);
+    }
+
+    &-title {
+      font-size: 9px;
+      font-weight: 700;
+      width: 90%;
+    }
+    &-description {
+      line-height: 1.5;
+      color: $text-color;
+      font-weight: 400;
+      font-size: 10px;
+      margin-top: 9px;
+      width: 91%;
+    }
+  }
+  @media (min-width: $s9-screen-sm-min){
+    &__description {
+      font-size: 13px;
+    }
+    &__list-item {
+      width: 64%;
+
+      &-title, &-description {
+        font-size: 13px;
+      }
+      &-title {
+        width: 100%;
+      }
+    }
+  }
+  @media (min-width: $s9-screen-md-min) {
+    &-bottom {
+      display: flex;
+      margin-top: 50px;
+      justify-content: space-between;
+    }
+    &__description {
+      width: 17.1%;
+      margin: 0;
+    }
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 74%;
+      &-item {
+        width: 31%;
+        padding-left: 3.5%;
+        &:nth-child(-n+3) {
+          margin-bottom: 35px;
+        }
+        &-title {
+          font-size: 9px;
+          width: 87%;
+        }
+        &-description {
+          font-size: 8px;
+        }
+      }
+    }
+  }
+  @media (min-width: $s9-screen-lg-min) {
+    &__description {
+      font-size: 17px;
+    }
+    &__list-item {
+      width: 27.35%;
+    
+      &-title{
+        font-size: 11.2px;
+        width: 100%;
+      }
+      &-description {
+        font-size: 10px;
+      }
+    }
+  
+  }
+  @media (min-width: $s9-screen-xl-min) {
+    &__description {
+      font-size: 15px;
+      width: 17.66%;
+    }
+    &__list-item {
+      width: 27.3%;
+      &-title{
+        font-size: 10px;
+      }
+      &-description {
+        font-size: 8.75px;
+      }
+    }
+  }
+  @media (min-width: $s9-screen-xxl-min) {
+    &__description {
+      font-size: 18px;
+      width: 17.63%;
+    }
+    &__list-item {
+      width: 27.25%;
+      &-title{
+        font-size: 12px;
+      }
+      &-description {
+        font-size: 10.5px;
+      }
+    }
+  }
+}

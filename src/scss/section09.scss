@@ -1,0 +1,302 @@
+// ***************top-part***************
+
+.section09 {
+  min-width: 320px;
+  font-family: Acrom;
+  @extend %section-rules;
+  margin-top: 25px;
+
+    @media (min-width: 480px) {
+      margin-top: 45px;
+    }
+
+    @media (min-width: 768px) {
+        margin-top: 60px;
+    }
+    @media (min-width: 960px) {
+        margin-top: 85px;
+    }
+    @media (min-width: 1200px) {
+        margin-top: 90px;
+    }
+    @media (min-width: 1440px) {
+        margin-top: 100px;
+    } 
+
+  &__subtitle {
+    position: relative;
+    &:before {
+      @extend %black-line;
+      transform: translate(-160%, 180%);
+    }
+  }
+
+  @media (max-width:$s9-screen-md-min - 1) {
+    &__title, &__subtitle {
+      display: none;
+    }
+  }
+
+  @media (min-width: $s9-screen-md-min) {
+    &__top-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__inner-top-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      width: 50%;
+    }
+
+    &__img {
+      width: 42.8%;
+    }
+
+    &__title {
+      font-size: 27px;
+      width:82%;
+      margin-top: 8%;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+
+    &__subtitle {
+      font-size: 9px;
+      width: 42%;
+      padding-left: 15%;
+      font-weight: 500;
+    }
+  }
+  
+  @include s9-top-block-view($s9-screen-lg-min, 34px, 11px);
+  @include s9-top-block-view($s9-screen-xl-min, 30px, 10px);
+  @include s9-top-block-view($s9-screen-xxl-min, 36px, 12px);
+}
+// ***************middle-part***************
+
+.section09 {
+  counter-reset: s9-item-number 0;
+
+  &__list-item {
+    box-sizing: border-box;
+    width: 185px;
+    @media(max-width:$s9-screen-md-min - 1) {
+      padding-left: 18px;
+      margin: 15px auto 0;
+    }
+
+    &:before {
+      @extend %s9-orange-mark;
+      transform: rotate(270deg) translate(-40%, -420%);
+    }
+
+    &-title {
+      font-size: 9px;
+    }
+    &-description {
+      line-height: 1.5;
+      color: $text-color;
+      font-size: 9px;
+      margin-top: 10px;
+    }
+  }
+
+  &__description {
+    @media(max-width:$s9-screen-md-min - 1) {
+      margin: 15px auto 20px;
+    }
+
+    font-weight: 900;
+    line-height: 1.8;
+    text-transform: uppercase;
+    font-size: 7px;
+    width: 62%;
+  }
+
+  @media (min-width:$s9-screen-sm-min) {
+    &__description {
+      width: 300px;
+      font-size: 10.5px;
+    }
+    &__list-item {
+      width: 285px;
+      &:before {
+        font-size: 11px;
+      }
+      &-title {
+        font-size: 13px;
+        @media (max-width:$s9-screen-md-min - 1) {
+          margin-top: 25px;
+        }
+      }
+      &-description {
+        font-size: 13px;
+      }
+    }
+  }
+
+  @media (min-width:$s9-screen-md-min) {
+    &__middle-wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__description{
+      width: 21%;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 74%;
+      &-item {
+        width: 31%;
+        padding-left:3.5%;
+        &:nth-child(-n+3){
+          margin-bottom: 35px;
+        }
+      }
+    }  
+  }
+
+  @include s9-middle-block-view ($s9-screen-md-min, 25px, 9px, -550%, 7px);
+  @include s9-middle-block-view ($s9-screen-lg-min, 50px, 11px, -590%, 7px);
+  @include s9-middle-block-view ($s9-screen-xl-min, 50px, 10px, -580%, 6px);
+  @include s9-middle-block-view ($s9-screen-xxl-min, 55px, 12px, -570%, 7.5px);
+}
+// ***************bottom-part***************
+
+.section09 {
+  &__bottom-wrapper {
+    margin-top: 25px;
+  }
+  @media(max-width:$s9-screen-md-min - 1) {
+    &__btn, &__btn-description {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__btn-description {
+    position: relative;
+    width: 215px;
+    color: $orange;
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 1.5;
+    &::before {
+      @extend %s9-slank-mark;
+    }
+  }
+
+  &__btn {
+    background: $orange;
+    color: $white;
+    border: none;
+    padding: 11px 19px;
+    text-transform: uppercase;
+    font-size: 7px;
+    font-weight: 900;
+    cursor: pointer;
+    &:hover {
+      box-shadow: $s9-orange-btn-shadow;
+    }
+    @media(max-width: $s9-screen-sm-min - 1) {
+      margin-top: 15px;
+    }
+  }
+
+  &__btn {
+    @media (max-width: $s9-screen-md-min - 1) {
+      margin-top: 30px;
+    }
+  }
+
+  @media(min-width:$s9-screen-sm-min) {
+    &__bottom-wrapper {
+      margin-top: 40px;
+    }
+
+    &__btn-description {
+      width: 325px;
+      font-size: 13px;
+      &:before {
+        width: 22p
+        x;
+        height: 2.5px;
+      }
+    }
+
+    &__btn {
+      padding: 15px 25px;
+      font-size: 10px;
+    }
+  }
+
+  @media(min-width: $s9-screen-md-min) {
+    &__bottom-wrapper {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      width: 55%;
+    }
+    &__btn-description {
+      order: 1;
+      width: 50%;
+      font-size: 9px;
+      &::before {
+        width: 19px;
+        height: 2px;
+      }
+    }
+
+    &__btn {
+      font-size: 7px;
+      padding: 11px 15px;
+    }
+  }
+
+  @media(min-width: $s9-screen-lg-min) {
+    &__btn-description {
+      font-size: 11px;
+      &::before {
+        width: 22px;
+        height: 2px;
+        transform: translate(-180%, 600%) rotate(-55deg);
+      }
+    }
+    &__btn {
+      padding: 12px 19px;
+    }
+  }
+
+  @media(min-width: $s9-screen-xl-min) {
+    &__btn-description {
+      font-size: 10px;
+      &::before {
+        width: 22px;
+        height: 2px;
+      }
+    }
+    &__btn {
+      padding: 12px 17px;
+    }
+  }
+
+  @media(min-width: $s9-screen-xxl-min) {
+    &__btn-description {
+      font-size: 12px;
+      &::before {
+        width: 24px;
+        height: 3px;
+      }
+    }
+    &__btn {
+      font-size: 8px;
+      padding: 15px 25px;
+    }
+  }
+}
