@@ -6352,7 +6352,7 @@ ul {
   .section15__course-wr .section15__course-text::before,
   .section16__title-about:before {
     width: 38px;
-    height: 5px;
+    height: 6px;
   }
 
   .header {
@@ -8798,6 +8798,23 @@ ul {
     padding: 0;
   }
 
+  .section01-wrap__subtitle:before,
+  .sec02-introdaction::before,
+  .section03__par-conteiner::before,
+  .sec06-introdaction::before,
+  .section07-headline__text:before,
+  .sec08 .sec08__four-step--text:before,
+  .section09__subtitle:before,
+  .section10-info__title-about:before,
+  .section11-info__subtitle::before,
+  .section12-text__subtitle::before,
+  .section13__subtitle::before,
+  .section15__course-wr .section15__course-text::before,
+  .section16__title-about:before {
+    width: 29px;
+    height: 5px;
+  }
+
   .header {
     background-image: url(../img/bg768.png);
     background-repeat: no-repeat;
@@ -9461,6 +9478,23 @@ ul {
   .section18 {
     width: 800px;
     padding: 0;
+  }
+
+  .section01-wrap__subtitle:before,
+  .sec02-introdaction::before,
+  .section03__par-conteiner::before,
+  .sec06-introdaction::before,
+  .section07-headline__text:before,
+  .sec08 .sec08__four-step--text:before,
+  .section09__subtitle:before,
+  .section10-info__title-about:before,
+  .section11-info__subtitle::before,
+  .section12-text__subtitle::before,
+  .section13__subtitle::before,
+  .section15__course-wr .section15__course-text::before,
+  .section16__title-about:before {
+    width: 36px;
+    height: 5px;
   }
 
   .header {
@@ -10137,7 +10171,7 @@ ul {
   .section15__course-wr .section15__course-text::before,
   .section16__title-about:before {
     width: 32px;
-    height: 4px;
+    height: 5px;
   }
 
   .header {
