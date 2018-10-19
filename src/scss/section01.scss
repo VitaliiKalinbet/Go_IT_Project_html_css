@@ -19,11 +19,11 @@
         }
         &__text {
             margin-bottom: 16px;
-            @include text-style(9px, 500, $black);  
+            @include text-style(9px, 500, $black);
         }
-        &__subtitle {   
+        &__subtitle {
             @include text-style(10px, 800, $black);
-            text-transform: uppercase;  
+            text-transform: uppercase;
             display: flex;
             position: relative;
             margin: 29px auto 10px;
@@ -39,41 +39,41 @@
             font-size: 14px;
             text-transform: uppercase;
             margin-left: 52px;
-    
+
             &--black {
                 color: $white;
-                background-color: $black;  
+                background-color: $black;
             }
-        }     
-    }    
-    &__subtitle--uppercase {   
+        }
+    }
+    &__subtitle--uppercase {
         @include text-style(9px, 800, $black);
-        text-transform: uppercase;  
-    } 
-    &-info { 
+        text-transform: uppercase;
+    }
+    &-info {
         width: 260px;
         margin: 0 auto;
 
         &__text {
            margin: 15px auto;
            list-style-type: square;
-           @include text-style(9px, 400, $black);    
-        
+           @include text-style(9px, 400, $black);
+
             &--bold {
               @include text-style(9px, 500, $black);
             }
             &--orange {
                display: block;
                width: 187px;
-               @include text-style(9px, 500, $orange);  
+               @include text-style(9px, 500, $orange);
                margin: 31px auto 0;
                text-align: center;
             }
-        }       
+        }
     }
 }
 @media (min-width: 480px) and (max-width:767px) {
-.section01 {    
+.section01 {
     background: url(../img/sec01_you_480@1X.png) no-repeat;
     background-position: 10px 235px;
     margin-top: 37px;
@@ -86,9 +86,9 @@
         &__text {
             width: 422px;
             margin-bottom: 24px;
-            @include text-style(14px, 500, $black);  
+            @include text-style(14px, 500, $black);
         }
-        &__subtitle {   
+        &__subtitle {
             @include text-style(15px, 800, $black);
             margin: 43px auto 14px;
             padding-left: 30px;
@@ -99,31 +99,31 @@
         &__title {
             font-size: 21px;
             margin-left: 80px;
-        }     
-    }    
-    &__subtitle--uppercase {   
-        @include text-style(14px, 800, $black);  
-    } 
+        }
+    }
+    &__subtitle--uppercase {
+        @include text-style(14px, 800, $black);
+    }
     &-info {
         padding: 0 34px;
         width: 375px;
-    
+
         &__text {
            margin: 23px auto;
            list-style-type: square;
-           @include text-style(14px, 400, $black);    
-        
+           @include text-style(14px, 400, $black);
+
             &--bold {
               @include text-style(14px, 500, $black);
             }
             &--orange {
                width: 280px;
-               @include text-style(14px, 500, $orange);  
+               @include text-style(14px, 500, $orange);
                margin: 47px auto 0;
             }
-        }       
+        }
     }
-}    
+}
 }
 @media (min-width: 768px) and (max-width:959px) {
 .section01 {
@@ -132,13 +132,13 @@
     margin-top: 112px;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background: url('../img/sec01_you_768@2X.png') no-repeat;
-    }   
+    }
     &-wrap{
         width: 640px;
         height: 241px;
         flex-wrap: wrap;
         margin-bottom: 68px;
-    
+
         &__photo {
             width: 258px;
             height: 241px;
@@ -148,11 +148,11 @@
             width: 163px;
             order: 1;
             margin: 0 0 36px 0;
-            @include text-style(9px, 500, $black);  
+            @include text-style(9px, 500, $black);
         }
-        &__subtitle {  
+        &__subtitle {
             width: 108px;
-            order: 2; 
+            order: 2;
             @include text-style(10px, 800, $black);
             margin: 0 0 20px 0;
             padding-left: 50px;
@@ -166,54 +166,54 @@
             font-size: 24px;
             margin-left: 0;
             line-height: 1.3;
-        } 
-    }             
-    &__subtitle--uppercase {   
-        @include text-style(17px, 800, $black); 
-    } 
+        }
+    }
+    &__subtitle--uppercase {
+        @include text-style(17px, 800, $black);
+    }
     &-info {
         display: flex;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
         width: 100%;
-        
+
         &__text {
             margin: 20px 25px 0 0;
             list-style-type: none;
-            @include text-style(9px, 400, $black); 
-            width: 140px; 
+            @include text-style(9px, 400, $black);
+            width: 140px;
 
             &:nth-child(4n) {
               margin-right: -25px;
-            } 
+            }
             &--bold {
                 @include text-style(9px, 500, $black);
             }
             &--orange {
                 display: block;
                 width: 200px;
-                @include text-style(9px, 500, $orange);  
+                @include text-style(9px, 500, $orange);
                 margin: 17px 0 0 440px;
                 text-align: left;
             }
-        } 
-    }                 
-}    
+        }
+    }
 }
-@media (min-width: 960px) and (max-width:1199px) {   
+}
+@media (min-width: 960px) and (max-width:1199px) {
 .section01 {
     background: url(../img/sec01_you_960@1X.png) no-repeat;
     background-position: 25px 280px;
     margin-top: 140px;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background: url('../img/sec01_you_960@2X.png') no-repeat;
-    } 
+    }
 
     &-wrap{
         flex-wrap: wrap;
         width: 640px;
         height: 301px;
         margin-bottom: 85px;
-    
+
         &__photo {
             width: 322px;
             height: 301px;
@@ -222,9 +222,9 @@
             order: 1;
             width: 251px;
             margin: 0 0 47px 80px;
-            @include text-style(11px, 500, $black);  
+            @include text-style(11px, 500, $black);
         }
-        &__subtitle {  
+        &__subtitle {
             order: 2;
             width: 140px;
             @include text-style(13px, 800, $black);
@@ -240,46 +240,46 @@
             font-size: 34px;
             margin-left: 80px;
             line-height: 1.3;
-        } 
-    }             
-    &__subtitle--uppercase {   
-        @include text-style(21px, 800, $black); 
-    } 
+        }
+    }
+    &__subtitle--uppercase {
+        @include text-style(21px, 800, $black);
+    }
     &-info {
         display: flex;
-        flex-wrap: wrap;  
+        flex-wrap: wrap;
         width: 100%;
-            
+
         &__text {
             margin: 22px 25px 0 0;
-            @include text-style(11px, 400, $black); 
-            width: 176px; 
+            @include text-style(11px, 400, $black);
+            width: 176px;
             list-style-type: none;
-    
+
             &:nth-child(4n) {
                 margin-right: -25px;
-            } 
+            }
             &--bold {
                 @include text-style(11px, 500, $black);
             }
             &--orange {
                 width: 248px;
-                @include text-style(11px, 500, $orange);  
+                @include text-style(11px, 500, $orange);
                 margin: 21px 0 0 552px;
                 text-align: left;
             }
-        } 
-    }                    
-}     
+        }
+    }
 }
-@media (min-width: 1200px) and (max-width:1439px) { 
+}
+@media (min-width: 1200px) and (max-width:1439px) {
 .section01 {
     background: url(../img/sec01_you_1200@1X.png) no-repeat;
     background-position: 20px 255px;
     margin-top: 125px;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background: url('../img/sec01_you_1200@2X.png') no-repeat;
-    } 
+    }
 
     &-wrap{
         flex-wrap: wrap;
@@ -287,7 +287,7 @@
         height: 269px;
         margin-bottom: 75px;
         align-content: start;
-    
+
         &__photo {
             width: 287px;
             height: 269px;
@@ -297,13 +297,13 @@
             order: 1;
             width: 224px;
             margin: 0 0 43px 68px;
-            @include text-style(10px, 500, $black);  
+            @include text-style(10px, 500, $black);
         }
-        &__subtitle {  
+        &__subtitle {
             order: 2;
             width: 140px;
             @include text-style(11px, 800, $black);
-            margin: 0 0 23px 68px;
+            margin: 0 0 18px 68px;
             padding-left: 50px;
         }
         &__subtitle:before {
@@ -315,17 +315,17 @@
             font-size: 30px;
             margin: 0 0 0 68px;
             line-height: 1.3;
-        } 
-    } 
+        }
+    }
     &-wrap1 {
         display: flex;
         flex-wrap: wrap;
         position: relative;
     }
-    &__subtitle--uppercase {   
-        @include text-style(19px, 800, $black); 
+    &__subtitle--uppercase {
+        @include text-style(19px, 800, $black);
         margin-right: 60px;
-    } 
+    }
     &-info {
         display: flex;
         flex-direction: column;
@@ -333,31 +333,31 @@
         align-content: space-between;
         width: 545px;
         height: 295px;
-                    
+
         &__text {
             margin: 0 0 20px 0;
-            @include text-style(11px, 400, $black); 
-            width: 160px; 
+            @include text-style(11px, 400, $black);
+            width: 160px;
             list-style-type: none;
 
             &:nth-child(3) {
                 margin-bottom: -20px;
-            } 
+            }
             &--bold {
                 @include text-style(11px, 500, $black);
             }
             &--orange {
                 position: absolute;
                 width: 150px;
-                @include text-style(11px, 500, $orange);  
+                @include text-style(11px, 500, $orange);
                 margin: 0;
                 text-align: left;
                 left: 545px;
                 top: 210px;
             }
-        } 
-    }                    
-}  
+        }
+    }
+}
 }
 @media (min-width: 1440px) {
 .section01 {
@@ -366,7 +366,7 @@
     margin-top: 125px;
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background: url('../img/sec01_you_1440@2X.png') no-repeat;
-    } 
+    }
 
     &-wrap{
         flex-wrap: wrap;
@@ -374,7 +374,7 @@
         height: 322px;
         margin-bottom: 90px;
         align-content: start;
-    
+
         &__photo {
             width: 344px;
             height: 322px;
@@ -384,9 +384,9 @@
             order: 1;
             width: 268px;
             margin: 0 0 47px 90px;
-            @include text-style(12px, 500, $black);  
+            @include text-style(12px, 500, $black);
         }
-        &__subtitle {  
+        &__subtitle {
             order: 2;
             width: 154px;
             @include text-style(14px, 800, $black);
@@ -402,17 +402,17 @@
             font-size: 36px;
             margin-left: 90px;
             line-height: 1.3;
-        } 
-    } 
+        }
+    }
     &-wrap1 {
         display: flex;
         flex-wrap: wrap;
         position: relative;
     }
-    &__subtitle--uppercase {   
-        @include text-style(23px, 800, $black); 
+    &__subtitle--uppercase {
+        @include text-style(23px, 800, $black);
         margin-right: 100px;
-    } 
+    }
     &-info {
         display: flex;
         flex-direction: column;
@@ -420,29 +420,29 @@
         align-content: space-between;
         width: 636px;
         height: 316px;
-                    
+
         &__text {
             margin: 0 0 25px 0;
-            @include text-style(12px, 400, $black); 
-            width: 197px; 
+            @include text-style(12px, 400, $black);
+            width: 197px;
             list-style-type: none;
 
             &:nth-child(3) {
                 margin-bottom: -25px;
-            } 
+            }
             &--bold {
                 @include text-style(12px, 500, $black);
             }
             &--orange {
                 position: absolute;
                 width: 175px;
-                @include text-style(12px, 500, $orange);  
+                @include text-style(12px, 500, $orange);
                 margin: 0;
                 text-align: left;
                 left: 670px;
                 top: 240px;
             }
-        } 
-    }                    
-}  
-}    
+        }
+    }
+}
+}
